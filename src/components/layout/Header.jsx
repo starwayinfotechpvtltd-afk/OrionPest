@@ -68,28 +68,31 @@ export default function Header() {
         <div className="w[60%] flex flex-row justify-around items-center">
           <div className="text-white">
             Email us:{" "}
-            <Link href={{ email: "sales@orionpest.com" }}>
+            <Link href="mailto:sales@orionpest.com">
               sales@orionpest.com
             </Link>
           </div>
           <div className="text-white">
             National toll free helpline:{" "}
-            <Link href={{ tel: "1800 419 8181" }}>1800 419 8181</Link>
+            <Link href="tel:18004198181">1800 419 8181</Link>
           </div>
           <div className="text-white">
-             WhatsApp Us: <Link href={{ tel: 9800123456 }}> 9800123456</Link>
+            {/* TODO: ADD WHATSAPP LINK */}
+            WhatsApp Us: <Link href="">9800123456</Link>
           </div>
         </div>
       </div>
       <div className="bg-[#fef200] w-full py-2">
-        <div className="w-[80%] flex items-center justify-between mx-auto">
+        <div className="px-2 md:px-8 flex items-center justify-between mx-auto">
           <Image
             src="/logo.png"
             alt="logo"
             width={120}
             height={120}
-            className="rounded-full"
+            className=""
           />
+          {/* check if mobile device */}
+          {}
           <nav className="flex items-center gap-4 flex-wrap">
             {navLinks?.map((nav) => (
               <Link
