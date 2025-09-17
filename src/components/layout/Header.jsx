@@ -58,54 +58,59 @@ export default function Header() {
 
   return (
     <header
-      className="w-full"
-      style={{
-        boxShadow:
-          "rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px",
-      }}
-    >
-      <div className="bg-[#2f3293] w-full  p-4">
-        <div className="w[60%] flex flex-row justify-around items-center">
-          <div className="text-white">
-            Email us:{" "}
-            <Link href={{ email: "sales@orionpest.com" }}>
-              sales@orionpest.com
-            </Link>
-          </div>
-          <div className="text-white">
-            National toll free helpline:{" "}
-            <Link href={{ tel: "1800 419 8181" }}>1800 419 8181</Link>
-          </div>
-          <div className="text-white">
-             WhatsApp Us: <Link href={{ tel: 9800123456 }}> 9800123456</Link>
-          </div>
-        </div>
+  className="w-full"
+  style={{
+    boxShadow:
+      "rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px",
+  }}
+>
+  {/* top bar */}
+  <div className="bg-[#2f3293] w-full p-3">
+    <div className="w-[90%] md:w-[60%] mx-auto flex flex-col md:flex-row md:justify-around gap-2 md:gap-0 text-center md:text-left">
+      <div className="text-white text-sm md:text-base">
+        Email us:{" "}
+        <Link href="mailto:sales@orionpest.com">sales@orionpest.com</Link>
       </div>
-      <div className="bg-[#fef200] w-full py-2">
-        <div className="w-[80%] flex items-center justify-between mx-auto">
-          <Image
-            src="/logo.png"
-            alt="logo"
-            width={120}
-            height={120}
-            className="rounded-full"
-          />
-          <nav className="flex items-center gap-4 flex-wrap">
-            {navLinks?.map((nav) => (
-              <Link
-                key={nav.id}
-                href={nav.link}
-                onClick={() => handleClick(nav.id)}
-                className={`${
-                  nav.active ? "text-blue-500" : "text-black"
-                } font-bold`}
-              >
-                {nav.text}
-              </Link>
-            ))}
-          </nav>
-        </div>
+      <div className="text-white text-sm md:text-base">
+        National toll free helpline:{" "}
+        <Link href="tel:18004198181">1800 419 8181</Link>
       </div>
-    </header>
+      <div className="text-white text-sm md:text-base">
+        WhatsApp Us: <Link href="tel:9800123456">9800123456</Link>
+      </div>
+    </div>
+  </div>
+
+  {/* main nav bar */}
+  <div className="bg-[#fef200] w-full py-2">
+    <div className="w-[90%] md:w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      {/* logo */}
+      <Image
+        src="/logo.png"
+        alt="logo"
+        width={100}
+        height={100}
+        className="rounded-full"
+      />
+
+      {/* navigation */}
+      <nav className="flex flex-wrap justify-center md:justify-end items-center gap-4">
+        {navLinks?.map((nav) => (
+          <Link
+            key={nav.id}
+            href={nav.link}
+            onClick={() => handleClick(nav.id)}
+            className={`${
+              nav.active ? "text-blue-500" : "text-black"
+            } font-bold text-sm md:text-base`}
+          >
+            {nav.text}
+          </Link>
+        ))}
+      </nav>
+    </div>
+  </div>
+</header>
+
   );
 }

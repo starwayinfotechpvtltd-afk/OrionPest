@@ -116,7 +116,7 @@ export default function Home() {
       </div>
 
       {/* Blue area */}
-      <div className="bg-linear-to-br from-cyan-500 to-blue-500 w-full mt-20 p-10 mb-20 border-b-8 border-blue-800">
+      <div className="bg-linear-to-br from-cyan-500 to-blue-500 w-full mt-20 p-10 mb-10 md:mb-20 border-b-8 border-blue-800">
         <div className="md:w-[80%] flex justify-evenly mx-auto">
           <p className="w-full md:w-[50%] text-white text-justify">
             Our vast experience, helmed by state-of-the-art technology, keeps
@@ -165,45 +165,52 @@ export default function Home() {
       </div>
 
       {/* Grid area */}
-      <div className="w-full p-10">
+      <div className="w-[90%] md:w-full mx-auto">
         <div className="md:flex justify-between items-center gap-4 md:w-[60%] mx-auto">
-          <div className="w-96 flex flex-col gap-2">
+          {/* left */}
+          <div className="flex-1 min-w-0 flex flex-col gap-2">
             <h3 className="text-2xl font-bold text-[#2F3293]">
               PAN INDIA SERVICES
             </h3>
-            <p>
+            <p className="text-base whitespace-normal break-words">
               Orion Pest Solutions Private Limited provides a range of pest
               control services in more than 40 locations in India including
               Nepal and Bhutan.
             </p>
           </div>
-          <div className="w-96 flex flex-col gap-2 mt-10 md:mt-0">
+
+          {/* right */}
+          <div className="flex-1 min-w-0 flex flex-col gap-2 mt-10 md:mt-0">
             <h3 className="text-2xl font-bold text-[#2F3293] md:text-end">
               COST EFFECTIVE SOLUTIONS
             </h3>
-            <p className="md:text-end">
+            <p className="text-base whitespace-normal break-words md:text-end">
               Orion Pest Solutions Private Limited provides a range of pest
               control services in more than 40 locations in India including
               Nepal and Bhutan.
             </p>
           </div>
         </div>
+
         <div className="md:flex justify-between items-center gap-4 md:w-[60%] mx-auto mt-9">
-          <div className="w-96 flex flex-col gap-2">
+          {/* left */}
+          <div className="flex-1 min-w-0 flex flex-col gap-2">
             <h3 className="text-2xl font-bold text-[#2F3293]">
               GUARANTEED RESULTS
             </h3>
-            <p className="">
+            <p className="text-base whitespace-normal break-words">
               With our indepth experience over 18 years, we continue to enhance
               our operational excellence, safety, capability, customer service
               and innovations.
             </p>
           </div>
-          <div className="w-96 flex flex-col gap-2 mt-10 md:mt-0">
+
+          {/* right */}
+          <div className="flex-1 min-w-0 flex flex-col gap-2 mt-10 md:mt-0">
             <h3 className="text-2xl font-bold text-[#2F3293] md:text-end">
               Home
             </h3>
-            <p className="md:text-end">
+            <p className="text-base whitespace-normal break-words md:text-end">
               RESIDENTIAL PEST CONTROL SERVICES COMMERCIAL PEST CONTROL SERVICES
               FUMIGATION PEST CONTROL SERVICES TERMITE PEST CONTROL SERVICES
             </p>
@@ -212,14 +219,17 @@ export default function Home() {
       </div>
 
       {/* Yellow area */}
-      <div className="bg-linear-to-br from-[#FFF300] to-[#FEBA00] pb-48 relative mt-24">
+      <div className="bg-linear-to-br from-[#FFF300] to-[#FEBA00] pb-80 relative mt-10 md:mt-20">
         <div className="w-full md:w-[60%] mx-auto px-10">
           <h2 className="text-2xl md:text-4xl font-bold uppercase text-[#2F3293] pt-16 pb-12 text-center">
             Membership & Certification
           </h2>
           <div className="flex gap-3 items-center justify-center">
             {certifictions.map((image) => (
-              <div className="w-[90px] h-[90px] md:w-[120px] md:h-[120px] relative" key={image.id}>
+              <div
+                className="w-[90px] h-[90px] md:w-[120px] md:h-[120px] relative"
+                key={image.id}
+              >
                 <Image
                   src={image?.image}
                   alt="img1"
