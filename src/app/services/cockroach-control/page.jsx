@@ -1,18 +1,21 @@
 import React from "react";
 import Image from "next/image";
 
-export default function page() {
+export default function Page() {
   return (
     <div className="w-full">
-      <div className="w-[60%] mx-auto">
-        <h2 className="text-[#2F3293] text-5xl text-center font-bold mt-20">
+      <div className="w-[90%] md:w-[80%] lg:w-[60%] mx-auto">
+        {/* Title */}
+        <h2 className="text-[#2F3293] text-3xl md:text-4xl lg:text-5xl text-center font-bold mt-10 md:mt-20">
           Cockroach Control Services
         </h2>
-        <h3 className="text-center text-[#0094DA] text-4xl font-bold mt-3">
+        <h3 className="text-center text-[#0094DA] text-2xl md:text-3xl lg:text-4xl font-bold mt-3">
           Say Goodbye to Cockroach Infestations
         </h3>
-        <div className="flex justify-between items-center">
-          <p className="w-[50%]">
+
+        {/* Intro Section */}
+        <div className="flex flex-col lg:flex-row justify-between items-center mt-6 gap-6">
+          <p className="w-full lg:w-1/2 text-base md:text-lg leading-relaxed">
             Cockroaches are one of the most common and persistent household
             pests. Known for contaminating food, spreading harmful bacteria, and
             triggering allergies, they breed rapidly and are experts at hiding
@@ -26,59 +29,68 @@ export default function page() {
             alt="cockroach"
             height={300}
             width={300}
+            className="w-48 md:w-60 lg:w-72 h-auto"
           />
         </div>
-        <div>
-          <h3 className="text-[#0094DA] text-4xl font-bold mt-3">
+
+        {/* Why Control is Important */}
+        <div className="mt-8">
+          <h3 className="text-[#0094DA] text-2xl md:text-3xl lg:text-4xl font-bold">
             Why Cockroach Control is Important
           </h3>
-          <ul className="list-disc ml-8 mt-2">
+          <ul className="list-disc ml-5 md:ml-8 mt-3 space-y-3 text-base md:text-lg">
             <li>
-            <span className="font-bold">Spread of Diseases:</span> Cockroaches are known carriers of harmful
-              bacteria such as E. coli and Salmonella, which can cause food
-              poisoning and other illnesses.
+              <span className="font-bold">Spread of Diseases:</span> Cockroaches
+              are known carriers of harmful bacteria such as E. coli and
+              Salmonella, which can cause food poisoning and other illnesses.
             </li>
             <li>
-            <span className="font-bold">Allergen and Asthma Triggers:</span> Their droppings and shed skin can
-              trigger allergic reactions and asthma attacks, especially in
-              children and individuals with respiratory issues.
+              <span className="font-bold">Allergen and Asthma Triggers:</span>{" "}
+              Their droppings and shed skin can trigger allergic reactions and
+              asthma attacks, especially in children and individuals with
+              respiratory issues.
             </li>
             <li>
-            <span className="font-bold">Contamination:</span> They contaminate food, utensils, and food
-              preparation surfaces, posing a significant health risk.
+              <span className="font-bold">Contamination:</span> They contaminate
+              food, utensils, and food preparation surfaces, posing a
+              significant health risk.
             </li>
             <li>
-            <span className="font-bold">Rapid Reproduction:</span> Cockroaches reproduce at an alarming rate,
-              turning a minor sighting into a severe infestation in a matter of
-              weeks.
+              <span className="font-bold">Rapid Reproduction:</span> Cockroaches
+              reproduce at an alarming rate, turning a minor sighting into a
+              severe infestation in a matter of weeks.
             </li>
           </ul>
         </div>
-        <div className="flex items-center justify-center">
+
+        {/* Images Section */}
+        <div className="flex flex-row items-center justify-center gap-6 mt-6">
           <Image
             src="/Images/bugs/cockroach2.png"
             height={200}
             width={200}
             alt="cockroach"
+            className="w-32 md:w-44 lg:w-52 h-auto"
           />
           <Image
             src="/Images/bugs/cockroach3.png"
             height={300}
             width={300}
             alt="cockroach"
+            className="w-40 md:w-56 lg:w-72 h-auto"
           />
         </div>
 
         {/* Approach */}
         <div className="mt-8">
-          <h3 className="text-[#0094DA] text-4xl font-bold mt-3">
+          <h3 className="text-[#0094DA] text-2xl md:text-3xl lg:text-4xl font-bold">
             Our Approach
           </h3>
-          <p className="font-bold text-lg mt-2">
+          <p className="font-bold text-base md:text-lg mt-2">
             We follow a systematic and scientific approach to effectively
             eliminate cockroaches from your property:
           </p>
-          <ul className="list-disc ml-8 mt-2 flex flex-col gap-3">
+          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-3 text-base md:text-lg">
             <li>
               <span className="font-bold">Inspection:</span> Our trained
               specialists conduct a thorough inspection to identify the species
@@ -107,49 +119,61 @@ export default function page() {
 
         {/* Pros */}
         <div className="mt-8">
-          <h3 className="text-[#0094DA] text-4xl font-bold mt-3">Pros</h3>
-          <p className="font-bold text-lg mt-2">
+          <h3 className="text-[#0094DA] text-2xl md:text-3xl lg:text-4xl font-bold">
+            Pros
+          </h3>
+          <p className="font-bold text-base md:text-lg mt-2">
             We follow a systematic and scientific approach to effectively
             eliminate cockroaches from your property:
           </p>
-          <ul className="list-disc ml-8 mt-2 flex flex-col gap-3">
+          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-3 text-base md:text-lg">
             <li>
-            <span className="font-bold">Long-Lasting Protection:</span> Our combination of gel and spray
-              treatments provides a durable barrier against future infestations.
+              <span className="font-bold">Long-Lasting Protection:</span> Our
+              combination of gel and spray treatments provides a durable barrier
+              against future infestations.
             </li>
             <li>
-            <span className="font-bold">Safe for Your Family:</span> We use professional-grade products that are
-              safe for your family, pets, and the environment when applied
-              correctly.
+              <span className="font-bold">Safe for Your Family:</span> We use
+              professional-grade products that are safe for your family, pets,
+              and the environment when applied correctly.
             </li>
             <li>
-            <span className="font-bold">Clean and Hassle-Free:</span> Our treatments are odorless, stain-free,
-              and designed to cause minimal disruption to your daily routine.
+              <span className="font-bold">Clean and Hassle-Free:</span> Our
+              treatments are odorless, stain-free, and designed to cause minimal
+              disruption to your daily routine.
             </li>
             <li>
-            <span className="font-bold">Effective for All Properties:</span> Our services are tailored to be
-              effective for both residential and commercial spaces, from
-              apartments to restaurants.
+              <span className="font-bold">Effective for All Properties:</span>{" "}
+              Our services are tailored to be effective for both residential and
+              commercial spaces, from apartments to restaurants.
             </li>
           </ul>
         </div>
       </div>
+
       {/* Yellow section */}
-      <div className="w-full mt-20 border-t-8 border-[#2F3293] bg-linear-to-br from-[#FFF300] to-[#FEBA00] pb-80 relative">
-        <div className="w-[60%] mx-auto">
-          <h2 className="text-[#2F3293] text-5xl text-center font-bold mt-10">
+      <div className="w-full mt-20 border-t-8 border-[#2F3293] bg-gradient-to-br from-[#FFF300] to-[#FEBA00] pb-80">
+        <div className="w-[90%] md:w-[80%] lg:w-[60%] mx-auto">
+          <h2 className="text-[#2F3293] text-3xl md:text-4xl lg:text-5xl text-center font-bold mt-10">
             Why Choose Orion for Cockroach Control?
           </h2>
-          <ul className="list-disc ml-8 mt-10 flex flex-col gap-3">
-            <li className="text-lg">
-              Eco-Friendly Methods: Safe, odorless, and pet-friendly treatments.
+          <ul className="list-disc ml-5 md:ml-8 mt-6 space-y-3 text-base md:text-lg">
+            <li>
+              <span className="font-bold">Eco-Friendly Methods:</span> Safe,
+              odorless, and pet-friendly treatments.
             </li>
-            <li className="text-lg">Trained Technicians: Skilled team with years of expertise.</li>
-            <li className="text-lg">
-              Custom Plans: Tailored solutions for homes, restaurants, and
-              offices.
+            <li>
+              <span className="font-bold">Trained Technicians:</span> Skilled
+              team with years of expertise.
             </li>
-            <li className="text-lg">Trusted Brand: Serving clients across India since 1998.</li>
+            <li>
+              <span className="font-bold">Custom Plans:</span> Tailored
+              solutions for homes, restaurants, and offices.
+            </li>
+            <li>
+              <span className="font-bold">Trusted Brand:</span> Serving clients
+              across India since 1998.
+            </li>
           </ul>
         </div>
       </div>

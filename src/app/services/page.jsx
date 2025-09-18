@@ -25,14 +25,38 @@ const boxes = [
 ];
 
 const services = [
-  "Cockroach Control",
-  "Bed bugs Control",
-  "Termite Control",
-  "Mosquito Control",
-  "Flies Control",
-  "Rodent Control",
-  "Bird Control",
-  "Ant Control",
+  {
+  service: "Cockroach Control",
+  link: "cockroach-control"
+  },
+  {
+  service: "Bed bugs Control",
+  link: "bedbug-control"
+  },
+  {
+  service: "Termite Control",
+  link: "termite-control"
+  },
+  {
+  service: "Mosquito Control",
+  link: "mosquito-control"
+  },
+  {
+  service: "Flies Control",
+  link: "flies-control"
+  },
+  {
+  service: "Rodent Control",
+  link: "rodent-control"
+  },
+  {
+  service: "Bird Control",
+  link: "bird-control"
+  },
+  {
+  service: "Ant Control",
+  link: "ant-control"
+  }
 ];
 export default function page() {
   return (
@@ -97,15 +121,16 @@ export default function page() {
         {/* Services list */}
         <div className="mt-10 md:mt-20 grid grid-cols-1 sm:grid-cols-2 gap-4">
           {services.map((service, index) => (
-            <div
+            <Link
               key={index}
-              className="flex items-center gap-3 group cursor-pointer"
+              className="flex items-center gap-3 group cursor-pointer w-fit"
+              href={`services/${service.link}`}
             >
               <FaArrowRightLong className="text-xl sm:text-2xl font-bold text-[#2F3293] transform transition-transform duration-300 group-hover:translate-x-2" />
               <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-[#2F3293]">
-                {service}
+                {service.service}
               </h2>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

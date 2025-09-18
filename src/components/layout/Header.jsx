@@ -80,7 +80,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="bg-[#fef200] w-full py-2">
+      {/* <div className="bg-[#fef200] w-full py-2">
         <div className="px-2 md:px-8 flex items-center justify-between mx-auto">
           <Image
             src="/logo.png"
@@ -89,7 +89,7 @@ export default function Header() {
             height={120}
             className=""
           />
-          {/* check if mobile device */}
+          
           {}
           <nav className="flex items-center gap-4 flex-wrap">
             {navLinks?.map((nav) => (
@@ -109,7 +109,7 @@ export default function Header() {
       </div>
       <div className="text-white text-sm md:text-base">
         WhatsApp Us: <Link href="tel:9800123456">9800123456</Link>
-      </div>
+      </div> */}
 
       {/* main nav bar */}
       <div className="bg-[#fef200] w-full py-2">
