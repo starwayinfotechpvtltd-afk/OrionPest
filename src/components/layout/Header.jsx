@@ -16,14 +16,14 @@ export default function Header() {
       active: false,
       text: "SERVICES",
       // link: "/services"
-      link: "#",
+      link: "/services",
     },
     {
       id: 3,
       active: false,
       text: "ABOUT",
       // link: "/about"
-      link: "#",
+      link: "/about",
     },
     {
       id: 4,
@@ -37,14 +37,14 @@ export default function Header() {
       active: false,
       text: "BRANCHES",
       // link: "/branches"
-      link: "#",
+      link: "/branches",
     },
     {
       id: 6,
       active: false,
       text: "KNOWLEDGEBASE",
       // link: "/knowledgebase"
-      link: "#",
+      link: "/knowledgebase",
     },
   ]);
 
@@ -115,13 +115,15 @@ export default function Header() {
       <div className="bg-[#fef200] w-full py-2">
         <div className="w-[90%] md:w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           {/* logo */}
-          <Image
-            src="/logo.png"
-            alt="logo"
-            width={100}
-            height={100}
-            className="rounded-full"
-          />
+          <Link href="/">
+            <Image
+              src="/logo.png"
+              alt="logo"
+              width={100}
+              height={100}
+              className="rounded-full"
+            />
+          </Link>
 
           {/* navigation */}
           <nav className="flex flex-wrap justify-center md:justify-end items-center gap-4">
