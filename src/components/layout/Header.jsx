@@ -1,52 +1,10 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-import Image from "next/image";
+import Navbar from "./Navbar";
 
 export default function Header() {
-  const [navLinks, setNavLinks] = useState([
-    {
-      id: 1,
-      active: true,
-      text: "HOME",
-      link: "/",
-    },
-    {
-      id: 2,
-      active: false,
-      text: "SERVICES",
-      // link: "/services"
-      link: "/services",
-    },
-    {
-      id: 3,
-      active: false,
-      text: "ABOUT",
-      // link: "/about"
-      link: "/about",
-    },
-    {
-      id: 4,
-      active: false,
-      text: "CLIENT",
-      // link: "/client"
-      link: "#",
-    },
-    {
-      id: 5,
-      active: false,
-      text: "BRANCHES",
-      // link: "/branches"
-      link: "/branches",
-    },
-    {
-      id: 6,
-      active: false,
-      text: "KNOWLEDGEBASE",
-      // link: "/knowledgebase"
-      link: "/knowledgebase",
-    },
-  ]);
+  
 
   const handleClick = (id) => {
     setNavLinks((prev) =>
@@ -65,12 +23,12 @@ export default function Header() {
       }}
     >
       <div className="bg-[#2f3293] w-full  p-4">
-        <div className="w[60%] flex flex-row justify-around items-center">
+        <div className="w[60%] flex flex-col gap-1 md:flex-row justify-around items-center">
           <div className="text-white">
             Email us:{" "}
             <Link href="mailto:sales@orionpest.com">sales@orionpest.com</Link>
           </div>
-          <div className="text-white">
+          <div className="text-white whitespace-break-spaces">
             National toll free helpline:{" "}
             <Link href="tel:18004198181">1800 419 8181</Link>
           </div>
@@ -112,36 +70,7 @@ export default function Header() {
       </div> */}
 
       {/* main nav bar */}
-      <div className="bg-[#fef200] w-full py-2">
-        <div className="w-[90%] md:w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          {/* logo */}
-          <Link href="/">
-            <Image
-              src="/logo.png"
-              alt="logo"
-              width={100}
-              height={100}
-              className="rounded-full"
-            />
-          </Link>
-
-          {/* navigation */}
-          <nav className="flex flex-wrap justify-center md:justify-end items-center gap-4">
-            {navLinks?.map((nav) => (
-              <Link
-                key={nav.id}
-                href={nav.link}
-                onClick={() => handleClick(nav.id)}
-                className={`${
-                  nav.active ? "text-blue-500" : "text-black"
-                } font-bold text-sm md:text-base`}
-              >
-                {nav.text}
-              </Link>
-            ))}
-          </nav>
-        </div>
-      </div>
+      <Navbar />
     </header>
   );
 }

@@ -161,7 +161,7 @@ export default function MosquitoControlPage() {
       </div>
 
       {/* Yellow section — responsive widths and smaller padding on mobile */}
-      <div className="w-full mt-12 border-t-8 border-[#2F3293] bg-gradient-to-br from-[#FFF300] to-[#FEBA00] pb-12">
+      <div className="w-full mt-12 border-t-8 border-[#2F3293] bg-gradient-to-br from-[#FFF300] to-[#FEBA00] pb-60">
         <div className="w-[90%] md:w-[80%] lg:w-[60%] mx-auto py-8">
           <h2 className="text-[#2F3293] text-2xl md:text-4xl lg:text-5xl text-center font-bold">
             Why Choose Orion for Mosquito Control?
