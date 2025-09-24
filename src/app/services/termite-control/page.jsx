@@ -15,7 +15,7 @@ export default function Page() {
 
         {/* Intro Section */}
         <div className="flex flex-col lg:flex-row justify-between items-center mt-8 gap-6">
-          <p className="w-full lg:w-1/2 text-base md:text-lg leading-relaxed">
+          <p className="w-full lg:w-1/2 text-lg leading-relaxed">
             Termites, often called "silent destroyers," can cause immense and
             costly damage to a home's structure. These wood-eating pests can go
             unnoticed for years, hollowing out wooden beams, flooring, and
@@ -38,7 +38,7 @@ export default function Page() {
           <h3 className="text-[#0094DA] text-2xl md:text-3xl lg:text-4xl font-bold">
             Why Termite Control is Important?
           </h3>
-          <ul className="list-disc ml-5 md:ml-8 mt-3 text-base md:text-lg flex flex-col gap-2">
+          <ul className="list-disc ml-5 md:ml-8 mt-3 text-lg flex flex-col gap-2">
             <li>
               <span className="font-bold">Prevent Expensive Structural Damage:</span>{" "}
               Termites can silently compromise the very foundation and framework
@@ -77,11 +77,11 @@ export default function Page() {
           <h3 className="text-[#0094DA] text-2xl md:text-3xl lg:text-4xl font-bold">
             Our Approach
           </h3>
-          <p className="font-bold text-base md:text-lg mt-2">
+          <p className="font-bold text-lg mt-2">
             We follow a scientific and highly effective process to eliminate
             termites and protect your property:
           </p>
-          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-3 text-base md:text-lg">
+          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-3 text-lg">
             <li>
               <span className="font-bold">Inspection:</span> Our certified
               professionals conduct a thorough inspection to identify the type
@@ -113,7 +113,7 @@ export default function Page() {
           <h3 className="text-[#0094DA] text-2xl md:text-3xl lg:text-4xl font-bold">
             Pros
           </h3>
-          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-2 text-base md:text-lg">
+          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-2 text-lg">
             <li>
               <span className="font-bold">Long-Term Protection:</span> Our
               treatments provide a durable, long-lasting barrier to prevent
@@ -144,7 +144,7 @@ export default function Page() {
           <h2 className="text-[#2F3293] text-3xl md:text-4xl lg:text-5xl text-center font-bold mt-10">
             Why Choose Orion for Termite Control?
           </h2>
-          <ul className="list-disc ml-5 md:ml-8 mt-6 grid grid-cols-1 lg:grid-cols-2 gap-3 text-base md:text-lg">
+          <ul className="list-disc ml-5 md:ml-8 mt-6 flex flex-col gap-3 text-lg">
             <li>
               <span className="font-bold">Eco-Friendly Methods:</span> Safe,
               odorless, and pet-friendly treatments.

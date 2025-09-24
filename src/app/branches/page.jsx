@@ -217,7 +217,7 @@ export default function page() {
                 key={index}
                 className="text-center"
               >
-                <p className="text-md font-extralight">{loc.location}</p>
+                <p className="text-lg font-extralight">{loc.location}</p>
                 <p>{loc.mob}</p>
                 <p>{loc.altMob ? loc.altMob : ""}</p>
               </Link>
@@ -237,7 +237,7 @@ export default function page() {
                 key={index}
                 className="text-center"
               >
-                <p className="text-md font-extralight">{loc.location}</p>
+                <p className="text-lg font-extralight">{loc.location}</p>
                 <p>{loc.mob}</p>
               </Link>
             ))}

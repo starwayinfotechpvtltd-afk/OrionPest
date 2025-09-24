@@ -15,7 +15,7 @@ export default function Page() {
 
         {/* Intro Section */}
         <div className="flex flex-col lg:flex-row justify-between items-center mt-6 gap-6">
-          <p className="w-full lg:w-1/2 text-base md:text-lg leading-relaxed">
+          <p className="w-full lg:w-1/2 text-lg leading-relaxed">
             Cockroaches are one of the most common and persistent household
             pests. Known for contaminating food, spreading harmful bacteria, and
             triggering allergies, they breed rapidly and are experts at hiding
@@ -38,7 +38,7 @@ export default function Page() {
           <h3 className="text-[#0094DA] text-2xl md:text-3xl lg:text-4xl font-bold">
             Why Cockroach Control is Important
           </h3>
-          <ul className="list-disc ml-5 md:ml-8 mt-3 space-y-3 text-base md:text-lg">
+          <ul className="list-disc ml-5 md:ml-8 mt-3 space-y-3 text-lg">
             <li>
               <span className="font-bold">Spread of Diseases:</span> Cockroaches
               are known carriers of harmful bacteria such as E. coli and
@@ -86,11 +86,11 @@ export default function Page() {
           <h3 className="text-[#0094DA] text-2xl md:text-3xl lg:text-4xl font-bold">
             Our Approach
           </h3>
-          <p className="font-bold text-base md:text-lg mt-2">
+          <p className="font-bold text-lg mt-2">
             We follow a systematic and scientific approach to effectively
             eliminate cockroaches from your property:
           </p>
-          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-3 text-base md:text-lg">
+          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-3 text-lg">
             <li>
               <span className="font-bold">Inspection:</span> Our trained
               specialists conduct a thorough inspection to identify the species
@@ -122,11 +122,11 @@ export default function Page() {
           <h3 className="text-[#0094DA] text-2xl md:text-3xl lg:text-4xl font-bold">
             Pros
           </h3>
-          <p className="font-bold text-base md:text-lg mt-2">
+          <p className="font-bold text-lg mt-2">
             We follow a systematic and scientific approach to effectively
             eliminate cockroaches from your property:
           </p>
-          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-3 text-base md:text-lg">
+          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-3 text-lg">
             <li>
               <span className="font-bold">Long-Lasting Protection:</span> Our
               combination of gel and spray treatments provides a durable barrier
@@ -157,7 +157,7 @@ export default function Page() {
           <h2 className="text-[#2F3293] text-3xl md:text-4xl lg:text-5xl text-center font-bold mt-10">
             Why Choose Orion for Cockroach Control?
           </h2>
-          <ul className="list-disc ml-5 md:ml-8 mt-6 space-y-3 text-base md:text-lg">
+          <ul className="list-disc ml-5 md:ml-8 mt-6 space-y-3 text-lg">
             <li>
               <span className="font-bold">Eco-Friendly Methods:</span> Safe,
               odorless, and pet-friendly treatments.

@@ -37,3 +37,10 @@ html {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;     /* Firefox */
 }
+
+h2{
+  font-family: "Instrument Sans", sans-serif;
+}
+h3,p, li{
+  font-family: "Martel Sans", sans-serif;
+}

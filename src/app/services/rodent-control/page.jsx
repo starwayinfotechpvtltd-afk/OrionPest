@@ -17,7 +17,7 @@ export default function RodentControlPage() {
         {/* Intro section */}
         <div className="flex flex-col lg:flex-row items-center gap-6 mt-8">
           <div className="w-full lg:w-1/2">
-            <p className="text-base md:text-lg leading-relaxed">
+            <p className="text-lg leading-relaxed">
               Rodents, including mice and rats, are not just a nuisance; they
               are a significant threat to your property and health. These
               cunning pests can chew through electrical wires, wooden
@@ -45,7 +45,7 @@ export default function RodentControlPage() {
           <h3 className="text-[#0094DA] text-2xl md:text-3xl lg:text-4xl font-bold">
             Why Rodent Control is Important?
           </h3>
-          <ul className="list-disc ml-5 md:ml-8 mt-4 flex flex-col gap-2 text-base md:text-lg">
+          <ul className="list-disc ml-5 md:ml-8 mt-4 flex flex-col gap-2 text-lg">
             <li>
               <span className="font-bold">Prevent Property Damage:</span>{" "}
               Rodents constantly gnaw on materials to wear down their teeth,
@@ -92,11 +92,11 @@ export default function RodentControlPage() {
           <h3 className="text-[#0094DA] text-2xl md:text-3xl lg:text-4xl font-bold">
             Our Approach
           </h3>
-          <p className="font-bold text-base md:text-lg mt-2">
+          <p className="font-bold text-lg mt-2">
             We follow a strategic and humane process to eliminate rodents and
             secure your property:
           </p>
-          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-3 text-base md:text-lg">
+          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-3 text-lg">
             <li>
               <span className="font-bold">Inspection:</span> Our certified
               professionals conduct a thorough inspection to identify the
@@ -129,7 +129,7 @@ export default function RodentControlPage() {
           <h3 className="text-[#0094DA] text-2xl md:text-3xl lg:text-4xl font-bold">
             Pros
           </h3>
-          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-2 text-base md:text-lg">
+          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-2 text-lg">
             <li>
               <span className="font-bold">Comprehensive Solution:</span> Our
               approach targets the entire rodent problem, from eliminating the
@@ -160,7 +160,7 @@ export default function RodentControlPage() {
           <h2 className="text-[#2F3293] text-2xl md:text-4xl lg:text-5xl text-center font-bold">
             Why Choose Orion for Rodent Control?
           </h2>
-          <ul className="list-disc ml-5 md:ml-8 mt-6 flex flex-col gap-2 text-base md:text-lg">
+          <ul className="list-disc ml-5 md:ml-8 mt-6 flex flex-col gap-2 text-lg">
             <li>
               <span className="font-bold">Eco-Friendly Methods:</span> Safe,
               odorless, and pet-friendly treatments.

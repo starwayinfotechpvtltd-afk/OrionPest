@@ -14,7 +14,7 @@ export default function Page() {
 
         {/* Intro section */}
         <div className="flex flex-col md:flex-row justify-between items-center mt-10 gap-6">
-          <p className="w-full md:w-1/2 text-base sm:text-lg">
+          <p className="w-full md:w-1/2 text-lg">
             Ants are one of the most persistent and widespread household pests.
             While some species are just a nuisance, others can cause significant
             damage or even pose health risks. They are masters at finding their
@@ -38,7 +38,7 @@ export default function Page() {
           <h3 className="text-[#0094DA] text-2xl sm:text-3xl lg:text-4xl font-bold">
             Why Ant Control is Important?
           </h3>
-          <ul className="list-disc ml-6 sm:ml-8 mt-3 flex flex-col gap-3 text-base sm:text-lg">
+          <ul className="list-disc ml-6 sm:ml-8 mt-3 flex flex-col gap-3 text-lg">
             <li>
               <span className="font-bold">Contaminate Food:</span> Ants can
               travel through unsanitary areas and then crawl all over your food,
@@ -86,11 +86,11 @@ export default function Page() {
           <h3 className="text-[#0094DA] text-2xl sm:text-3xl lg:text-4xl font-bold">
             Our Approach
           </h3>
-          <p className="font-bold text-base sm:text-lg mt-2">
+          <p className="font-bold text-lg mt-2">
             We follow a systematic and effective process to eliminate ants at
             their source:
           </p>
-          <ul className="list-disc ml-6 sm:ml-8 mt-3 flex flex-col gap-3 text-base sm:text-lg">
+          <ul className="list-disc ml-6 sm:ml-8 mt-3 flex flex-col gap-3 text-lg">
             <li>
               <span className="font-bold">Inspection:</span> Our experts conduct
               a detailed inspection to identify the ant species, locate the
@@ -122,7 +122,7 @@ export default function Page() {
           <h3 className="text-[#0094DA] text-2xl sm:text-3xl lg:text-4xl font-bold">
             Pros
           </h3>
-          <ul className="list-disc ml-6 sm:ml-8 mt-3 flex flex-col gap-3 text-base sm:text-lg">
+          <ul className="list-disc ml-6 sm:ml-8 mt-3 flex flex-col gap-3 text-lg">
             <li>
               <span className="font-bold">Effective for the Entire Colony:</span>{" "}
               Our baiting system ensures the elimination of the queen and the
@@ -153,7 +153,7 @@ export default function Page() {
           <h2 className="text-[#2F3293] text-3xl sm:text-4xl lg:text-5xl text-center font-bold mt-10">
             Why Choose Orion for Ant Control?
           </h2>
-          <ul className="list-disc ml-6 sm:ml-8 mt-6 sm:mt-10 flex flex-col gap-3 text-base sm:text-lg">
+          <ul className="list-disc ml-6 sm:ml-8 mt-6 sm:mt-10 flex flex-col gap-3 text-lg">
             <li>
               <span className="font-bold">Eco-Friendly Methods:</span> Safe,
               odorless, and pet-friendly treatments.

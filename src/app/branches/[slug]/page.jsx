@@ -1,18 +1,19 @@
 import React from "react";
 import branches from "../branchesData.json";
 import { FaPhone } from "react-icons/fa6";
+import Link from "next/link";
 
 // Generate paths for all branches
 export async function generateStaticParams() {
-    return Object.keys(branches).map((slug) => ({ slug }));
-  }
-  
-export default function BranchPage({ params }) {
-    const branch = branches[params.slug];
+  return Object.keys(branches).map((slug) => ({ slug }));
+}
 
-    if (!branch) {
-      return <p className="text-center mt-10">Branch not found</p>;
-    }
+export default function BranchPage({ params }) {
+  const branch = branches[params.slug];
+
+  if (!branch) {
+    return <p className="text-center mt-10">Branch not found</p>;
+  }
 
   return (
     <div className="w-full">
@@ -22,18 +23,23 @@ export default function BranchPage({ params }) {
         </h2>
         <div className="mt-10 mb-60">
           {branch.content.map((para, index) => (
-            <p key={index}>{para}</p>
+            <span key={index}>
+            <p>{para}</p>
+            <br />
+            </span>
           ))}
           {branch.mobile && (
-            <button
-              className="flex items-center bg-[#FEF200] py-3 px-5 rounded-2xl mx-auto mt-20 cursor-pointer"
-              style={{
-                boxShadow: "rgba(0, 0, 0, 0.3) 4px 4px 2px",
-              }}
-            >
-              <FaPhone />
-              {branch.mobile}
-            </button>
+            <Link href={`tel:${branch.mobile}`}>
+              <button
+                className="flex items-center bg-[#FEF200] py-3 px-5 rounded-2xl mx-auto mt-20 cursor-pointer"
+                style={{
+                  boxShadow: "rgba(0, 0, 0, 0.3) 4px 4px 2px",
+                }}
+              >
+                <FaPhone />
+                {branch.mobile}
+              </button>
+            </Link>
           )}
         </div>
       </div>

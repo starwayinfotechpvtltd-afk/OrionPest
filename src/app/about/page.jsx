@@ -32,7 +32,7 @@ export default function page() {
         <h2 className="text-3xl md:text-5xl font-bold text-[#2F3293] text-center mt-16 md:mt-28">
           ABOUT OUR JOURNEY
         </h2>
-        <p className="mt-6 text-black text-sm md:text-base leading-relaxed">
+        <p className="mt-6 text-black text-lg md:text-base leading-relaxed">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod or incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, fugiat nulla pariatur. Excepteur sint occaecat cupidatat
@@ -46,13 +46,13 @@ export default function page() {
 
       {/* Blue part */}
       <div className="w-full bg-[#2F3293] py-10 mt-16 md:mt-20">
-        <div className="w-[90%] sm:w-[80%] md:w-[60%] mx-auto flex flex-col md:flex-row justify-around items-center gap-8">
+        <div className="w-[90%] sm:w-[80%] md:w-[60%] mx-auto flex flex-row justify-around items-center gap-8">
           {badges.map((badge) => (
             <div
               className="flex flex-col justify-center gap-3 items-center text-center"
               key={badge.id}
             >
-              <div className="bg-[#FEF200] rounded-full p-4">
+              <div className="bg-[#FEF200] rounded-full p-3 md:p-4">
                 <Image
                   src={badge?.image || "/Images/about2.png"}
                   alt={badge.text}
@@ -82,7 +82,7 @@ export default function page() {
             <h3 className="text-[#2F3293] text-2xl md:text-3xl font-bold">
               OUR MISSION
             </h3>
-            <p className="mt-3 text-sm md:text-base leading-relaxed">
+            <p className="mt-3 text-lg md:text-base leading-relaxed">
               To protect, preserve and nurture the health, safety and well-being
               of our clients, their families and neighbors by providing the most
               comprehensive and high quality pest control solutions that exceed
@@ -93,7 +93,7 @@ export default function page() {
             <h3 className="text-[#2F3293] text-2xl md:text-3xl font-bold">
               OUR VISION
             </h3>
-            <p className="mt-3 text-sm md:text-base leading-relaxed">
+            <p className="mt-3 text-lg md:text-base leading-relaxed">
               To gain excellence through our state-of-the-art professional pest
               control services in accordance with the highest industry
               standards.
@@ -105,29 +105,29 @@ export default function page() {
       {/* Services points */}
       <div className="flex flex-col md:flex-row justify-around items-start gap-8 w-[90%] sm:w-[80%] md:w-[60%] mx-auto mt-10">
         <div className="flex flex-col gap-3 text-sm md:text-base">
-          <p className="flex items-center gap-2">
+          <p className="flex items-center gap-2 text-lg">
             <RiPokerDiamondsFill color="#2F3293" />
             Pestcontrol service Rescomaned.
           </p>
-          <p className="flex items-center gap-2">
+          <p className="flex items-center gap-2 text-lg">
             <RiPokerDiamondsFill color="#2F3293" />
             Use of the part pestconteol.
           </p>
-          <p className="flex items-center gap-2">
+          <p className="flex items-center gap-2 text-lg">
             <RiPokerDiamondsFill color="#2F3293" />
             Pestcontrol Service Rescomaned.
           </p>
         </div>
         <div className="flex flex-col gap-3 text-sm md:text-base">
-          <p className="flex items-center gap-2">
+          <p className="flex items-center gap-2 text-lg">
             <RiPokerDiamondsFill color="#2F3293" />
             Pesto part of the Men.
           </p>
-          <p className="flex items-center gap-2">
+          <p className="flex items-center gap-2 text-lg">
             <RiPokerDiamondsFill color="#2F3293" />
             24/7 Services
           </p>
-          <p className="flex items-center gap-2">
+          <p className="flex items-center gap-2 text-lg">
             <RiPokerDiamondsFill color="#2F3293" />
             Use of the Part Name
           </p>
@@ -139,7 +139,7 @@ export default function page() {
         <h2 className="text-[#2F3293] text-3xl md:text-5xl font-bold text-center">
           The Experts in Pest Control
         </h2>
-        <p className="mt-6 md:mt-10 text-sm md:text-base leading-relaxed">
+        <p className="mt-6 md:mt-10 text-lg md:text-base leading-relaxed">
           Established in the year 1998, Orion Pest Solutions Pvt. Ltd. is one of
           the leading professional pest control service provider in India. We
           are an ISO 9001:2008, 14001:14004 certified company and are a member
@@ -152,7 +152,7 @@ export default function page() {
           knowledgeable and highly experienced technicians provide you effective
           pest control solutions for both residential and commercial areas.
           <br />
-          <b className="text-base md:text-lg">
+          <b className="text-lg md:text-lg">
             We are your trusted partner for pest control
           </b>
           .
@@ -165,7 +165,7 @@ export default function page() {
           <h3 className="text-[#2F3293] text-2xl md:text-4xl font-bold text-center">
             OUR SCORE
           </h3>
-          <p className="text-black mt-4 md:mt-6 text-sm md:text-base leading-relaxed text-center">
+          <p className="text-black mt-4 md:mt-6 text-lg md:text-base leading-relaxed text-center">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod or incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim veniam, fugiat nulla pariatur. Lorem ipsum dolor sit amet,
@@ -182,7 +182,7 @@ export default function page() {
               <h3 className="text-[#2F3293] text-center text-lg md:text-2xl font-semibold">
                 Residential Pest Control Services
               </h3>
-              <p className="text-center mt-3 text-sm md:text-base">
+              <p className="text-center mt-3 text-lg md:text-base">
                 Proin gravida nibh vel velit auctor aliquet. Aenean sollici
                 tudin, lorem quis bibendum auctor.
               </p>
@@ -191,7 +191,7 @@ export default function page() {
               <h3 className="text-[#2F3293] text-center text-lg md:text-2xl font-semibold">
                 Commercial Pest Control Services
               </h3>
-              <p className="text-center mt-3 text-sm md:text-base">
+              <p className="text-center mt-3 text-lg md:text-base">
                 Proin gravida nibh vel velit auctor aliquet. Aenean sollici
                 tudin, lorem quis bibendum auctor.
               </p>
@@ -200,7 +200,7 @@ export default function page() {
               <h3 className="text-[#2F3293] text-center text-lg md:text-2xl font-semibold">
                 Fumigation Pest Control Services
               </h3>
-              <p className="text-center mt-3 text-sm md:text-base">
+              <p className="text-center mt-3 text-lg md:text-base">
                 Proin gravida nibh vel velit auctor aliquet. Aenean sollici
                 tudin, lorem quis bibendum auctor.
               </p>

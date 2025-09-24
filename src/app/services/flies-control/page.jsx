@@ -17,7 +17,7 @@ export default function FlyControlPage() {
         {/* Intro section */}
         <div className="flex flex-col lg:flex-row items-center gap-6 mt-8">
           <div className="w-full lg:w-1/2">
-            <p className="text-base md:text-lg leading-relaxed">
+            <p className="text-lg leading-relaxed">
               Flies are not just a nuisance; they pose a serious health risk.
               Known for their ability to carry and spread a wide range of
               bacteria and pathogens, they can contaminate food and surfaces,
@@ -45,7 +45,7 @@ export default function FlyControlPage() {
           <h3 className="text-[#0094DA] text-2xl md:text-3xl lg:text-4xl font-bold">
             Why Fly Control is Important?
           </h3>
-          <ul className="list-disc ml-5 md:ml-8 mt-4 flex flex-col gap-2 text-base md:text-lg">
+          <ul className="list-disc ml-5 md:ml-8 mt-4 flex flex-col gap-2 text-lg">
             <li>
               <span className="font-bold">Prevent Disease Transmission:</span>{" "}
               Flies travel between unsanitary areas like garbage and animal
@@ -93,11 +93,11 @@ export default function FlyControlPage() {
           <h3 className="text-[#0094DA] text-2xl md:text-3xl lg:text-4xl font-bold">
             Our Approach
           </h3>
-          <p className="font-bold text-base md:text-lg mt-2">
+          <p className="font-bold text-lg mt-2">
             We follow a strategic and multi-step process to eliminate flies and
             prevent their return:
           </p>
-          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-3 text-base md:text-lg">
+          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-3 text-lg">
             <li>
               <span className="font-bold">Inspection:</span> We conduct a
               thorough inspection to identify the species of fly, locate their
@@ -130,7 +130,7 @@ export default function FlyControlPage() {
           <h3 className="text-[#0094DA] text-2xl md:text-3xl lg:text-4xl font-bold">
             Pros
           </h3>
-          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-2 text-base md:text-lg">
+          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-2 text-lg">
             <li>
               <span className="font-bold">Comprehensive Solution:</span> Our
               approach targets flies at every stage of their life cycle, from
@@ -162,7 +162,7 @@ export default function FlyControlPage() {
           <h2 className="text-[#2F3293] text-2xl md:text-4xl lg:text-5xl text-center font-bold">
             Why Choose Orion for Fly Control?
           </h2>
-          <ul className="list-disc ml-5 md:ml-8 mt-6 grid grid-cols-1 lg:grid-cols-2 gap-3 text-base md:text-lg">
+          <ul className="list-disc ml-5 md:ml-8 mt-6 flex flex-col gap-3 text-lg">
             <li>
               <span className="font-bold">Eco-Friendly Methods:</span> Safe,
               odorless, and pet-friendly treatments.

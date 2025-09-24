@@ -15,7 +15,7 @@ export default function Page() {
 
         {/* Intro Section */}
         <div className="flex flex-col lg:flex-row justify-between items-center mt-8 gap-6">
-          <p className="w-full lg:w-1/2 text-base md:text-lg leading-relaxed">
+          <p className="w-full lg:w-1/2 text-lg leading-relaxed">
             While beautiful in nature, birds can become a major nuisance when
             they roost on buildings, ledges, and other structures. Their
             droppings are not only unsightly but also highly corrosive, damaging
@@ -38,7 +38,7 @@ export default function Page() {
           <h3 className="text-[#0094DA] text-2xl md:text-3xl lg:text-4xl font-bold">
             Why Bird Control is Important?
           </h3>
-          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-2 text-base md:text-lg">
+          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-2 text-lg">
             <li>
               <span className="font-bold">Prevent Property Damage:</span> Bird
               droppings are highly acidic and can corrode building materials,
@@ -77,11 +77,11 @@ export default function Page() {
           <h3 className="text-[#0094DA] text-2xl md:text-3xl lg:text-4xl font-bold">
             Our Approach
           </h3>
-          <p className="font-bold text-base md:text-lg mt-2">
+          <p className="font-bold text-lg mt-2">
             We follow a safe, humane, and effective process to manage and deter
             birds:
           </p>
-          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-3 text-base md:text-lg">
+          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-3 text-lg">
             <li>
               <span className="font-bold">Inspection:</span> We perform a
               thorough inspection to identify the bird species, the extent of
@@ -112,7 +112,7 @@ export default function Page() {
           <h3 className="text-[#0094DA] text-2xl md:text-3xl lg:text-4xl font-bold">
             Pros
           </h3>
-          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-2 text-base md:text-lg">
+          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-2 text-lg">
             <li>
               <span className="font-bold">Humane & Safe:</span> All our methods
               are designed to deter birds without causing them harm.
@@ -142,7 +142,7 @@ export default function Page() {
           <h2 className="text-[#2F3293] text-3xl md:text-4xl lg:text-5xl text-center font-bold mt-10">
             Why Choose Orion for Bird Control?
           </h2>
-          <ul className="list-disc ml-5 md:ml-8 mt-6 grid grid-cols-1 lg:grid-cols-2 gap-3 text-base md:text-lg">
+          <ul className="list-disc ml-5 md:ml-8 mt-6 flex flex-col gap-3 text-lg">
             <li>
               <span className="font-bold">Eco-Friendly Methods:</span> Safe,
               odorless, and pet-friendly treatments.

@@ -17,7 +17,7 @@ export default function MosquitoControlPage() {
         {/* Intro: stacks on mobile, side-by-side on large */}
         <div className="flex flex-col lg:flex-row items-center gap-6 mt-8">
           <div className="w-full lg:w-1/2">
-            <p className="text-base md:text-lg leading-relaxed">
+            <p className="text-lg leading-relaxed">
               Mosquitoes are more than just a nuisance; they are a significant
               health threat. These blood-sucking insects are notorious for
               carrying and transmitting serious diseases such as Dengue Fever,
@@ -46,7 +46,7 @@ export default function MosquitoControlPage() {
             Why Mosquito Control is Important?
           </h3>
 
-          <ul className="list-disc ml-5 md:ml-8 mt-4 flex flex-col gap-2 text-base md:text-lg">
+          <ul className="list-disc ml-5 md:ml-8 mt-4 flex flex-col gap-2 text-lg">
             <li>
               <span className="font-bold">Prevent Disease Transmission:</span>{" "}
               Mosquitoes are vectors for some of the world's deadliest diseases,
@@ -95,12 +95,12 @@ export default function MosquitoControlPage() {
           <h3 className="text-[#0094DA] text-2xl md:text-3xl lg:text-4xl font-bold">
             Our Approach
           </h3>
-          <p className="font-bold text-base md:text-lg mt-2">
+          <p className="font-bold text-lg mt-2">
             We follow a strategic and scientific process to manage mosquito
             populations effectively:
           </p>
 
-          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-3 text-base md:text-lg">
+          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-3 text-lg">
             <li>
               <span className="font-bold">Inspection:</span> Our experts will
               conduct a thorough inspection of your property to identify all
@@ -134,7 +134,7 @@ export default function MosquitoControlPage() {
             Pros
           </h3>
 
-          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-2 text-base md:text-lg">
+          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-2 text-lg">
             <li>
               <span className="font-bold">Highly Effective:</span> Our
               multi-pronged approach targets mosquitoes at every stage of their
@@ -167,7 +167,7 @@ export default function MosquitoControlPage() {
             Why Choose Orion for Mosquito Control?
           </h2>
 
-          <ul className="list-disc ml-5 md:ml-8 mt-6 grid grid-cols-1 lg:grid-cols-2 gap-3 text-base md:text-lg">
+          <ul className="list-disc ml-5 md:ml-8 mt-6 flex flex-col gap-3 text-lg">
             <li>
               <span className="font-bold">Eco-Friendly Methods:</span> Safe,
               odorless, and pet-friendly treatments.

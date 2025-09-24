@@ -46,20 +46,20 @@ export default function page() {
         <h3 className="text-black text-xl text-center mt-16 font-bold">
           How We Approach Pests
         </h3>
-        <p className="mt-4 text-center">
+        <p className="mt-4 text-center text-lg">
           We follow Integrated Pest Management (IPM): prevent first (sanitation,
           exclusion, habitat changes), then monitor, and only then treat—with
           the least-risk option that still solves the problem.
         </p>
         {/* Tab section */}
-        <div className="bg-[#ED1C26] w-full p-6 sm:p-8 mt-10 sm:mt-20 rounded overflow-x-auto scrollbar-hide">
-          <ul className="flex items-center gap-6 whitespace-nowrap min-w-max justify-evenly">
+        <div className="bg-[#ED1C26] w-full p-4 sm:p-6 md:p-8 mt-6 sm:mt-10 md:mt-20 rounded">
+          <ul className="flex flex-wrap items-center justify-evenly gap-3 sm:gap-6 text-center">
             {tab.map((tab, index) => (
               <Link
                 key={index}
                 href={`#${tab.id}`}
                 scroll={true}
-                className="text-white font-semibold text-md cursor-pointer"
+                className="text-white font-semibold text-sm sm:text-md md:text-lg cursor-pointer"
               >
                 {tab.tab}
               </Link>
@@ -72,8 +72,8 @@ export default function page() {
           <div className="bg-[#2F3293] p-6 w-[100%] md:w-fit text-white font-bold rounded mx-auto md:mx-0 text-center">
             Cockroaches
           </div>
-          <p className="font-bold mt-10">Why They Matter?</p>
-          <p className="mt-3">
+          <p className="font-bold mt-10 text-lg">Why They Matter?</p>
+          <p className="mt-3 text-lg">
             Cockroaches contaminate food/surfaces and are major asthma/allergy
             triggers due to potent indoor allergens.
           </p>
@@ -87,8 +87,8 @@ export default function page() {
             />
           </div>
           <div>
-            <p className="font-bold mt-5">Common signs</p>
-            <ul className="list-disc ml-8">
+            <p className="font-bold mt-5 text-lg">Common signs</p>
+            <ul className="list-disc ml-8 text-lg">
               <li>
                 Pepper-like droppings, egg cases (ootheca), shed skins, musty
                 odor
@@ -97,8 +97,8 @@ export default function page() {
             </ul>
           </div>
           <div>
-            <p className="font-bold mt-5">IPM prevention</p>
-            <ul className="list-disc ml-8">
+            <p className="font-bold mt-5 text-lg">IPM prevention</p>
+            <ul className="list-disc ml-8 text-lg">
               <li>
                 Nightly kitchen cleanup; fix leaks; declutter; cover drains
               </li>
@@ -109,8 +109,8 @@ export default function page() {
             </ul>
           </div>
           <div>
-            <p className="font-bold mt-5">Life Cycle</p>
-            <ul className="list-disc ml-8">
+            <p className="font-bold mt-5 text-lg">Life Cycle</p>
+            <ul className="list-disc ml-8 text-lg">
               <li>Egg capsules (ootheca) → Nymph → Adult</li>
               <li>
                 One female can produce up to 300–400 offspring in her lifetime
@@ -118,23 +118,23 @@ export default function page() {
             </ul>
           </div>
           <div>
-            <p className="font-bold mt-5">Seasonal Activity</p>
-            <ul className="list-disc ml-8">
+            <p className="font-bold mt-5 text-lg">Seasonal Activity</p>
+            <ul className="list-disc ml-8 text-lg">
               <li>Active year-round, but infestations peak in warm months</li>
             </ul>
           </div>
           <div>
-            <p className="font-bold mt-5">
+            <p className="font-bold mt-5 text-lg">
               Professional treatments (when needed)
             </p>
-            <ul className="list-disc ml-8">
+            <ul className="list-disc ml-8 text-lg">
               <li>
                 Bait gels + IGRs as first line; targeted dusts in voids; limited
                 crack-and-crevice sprays (not broadcast) after monitoring.
               </li>
             </ul>
           </div>
-          <p className="mt-10">
+          <p className="mt-10 text-lg">
             Cockroaches have survived for millions of years thanks to their
             adaptability. They hide in kitchens, drains, and dark, moist places.
             Most infestations in India involve the German cockroach, American
@@ -147,8 +147,8 @@ export default function page() {
           <div className="bg-[#2F3293] p-6 w-[100%] md:w-fit text-white font-bold rounded mx-auto md:mx-0 text-center">
             Bed Bugs
           </div>
-          <p className="font-bold mt-10 md:text-right">Why they matter</p>
-          <p className="mt-3 md:text-right">
+          <p className="font-bold mt-10 md:text-right text-lg">Why they matter</p>
+          <p className="mt-3 md:text-right text-lg">
             Bed bugs are expert hitchhikers; bites can cause welts and secondary
             infection from scratching. Most cases need symptomatic care, not
             antibiotics.
@@ -163,18 +163,16 @@ export default function page() {
             />
           </div>
           <div>
-            <p className="font-bold mt-5 md:text-right">Signs of Infestation</p>
-            <ul className="list-disc list-inside md:text-right">
+            <p className="font-bold mt-5 md:text-right text-lg">Signs of Infestation</p>
+            <ul className="list-disc list-inside md:text-right text-lg">
               <li>Rusty blood spots on sheets</li>
               <li>Clusters of itchy bites on skin</li>
-              <li>
-                Tiny black droppings on mattress seams
-              </li>
+              <li>Tiny black droppings on mattress seams</li>
             </ul>
           </div>
           <div>
-            <p className="font-bold mt-5 md:text-right">IPM prevention</p>
-            <ul className="list-disc list-inside md:text-right">
+            <p className="font-bold mt-5 md:text-right text-lg">IPM prevention</p>
+            <ul className="list-disc list-inside md:text-right text-lg">
               <li>
                 Reduce clutter; encase mattresses; launder/dry on high heat (≥60
                 °C); inspect used furniture and travel bags.
@@ -182,8 +180,8 @@ export default function page() {
             </ul>
           </div>
           <div>
-            <p className="font-bold mt-5 md:text-right">Life Cycle</p>
-            <ul className="list-disc list-inside md:text-right">
+            <p className="font-bold mt-5 md:text-right text-lg">Life Cycle</p>
+            <ul className="list-disc list-inside md:text-right text-lg">
               <li>Egg → Nymph (5 stages) → Adult</li>
               <li>
                 Can live for months without feeding, making them tough to
@@ -192,8 +190,8 @@ export default function page() {
             </ul>
           </div>
           <div>
-            <p className="font-bold md:text-right">Professional treatments</p>
-            <ul className="list-disc list-inside md:text-right">
+            <p className="font-bold md:text-right text-lg">Professional treatments</p>
+            <ul className="list-disc list-inside md:text-right text-lg">
               <li>
                 Heat remediation (whole-room thermal), thorough vacuuming/steam,
                 encasements, targeted insecticides where necessary; follow-up
@@ -201,7 +199,7 @@ export default function page() {
               </li>
             </ul>
           </div>
-          <p className="mt-10 md:text-right float-right">
+          <p className="mt-10 md:text-right float-right text-lg">
             Bed bugs are blood-feeding parasites that hide in beds, furniture,
             and luggage. They are expert hitchhikers, spreading easily through
             travel, second-hand items, or visitors.
@@ -213,12 +211,12 @@ export default function page() {
           <div className="bg-[#2F3293] p-6 w-[100%] md:w-fit text-white font-bold rounded mx-auto md:mx-0 text-center">
             Termites
           </div>
-          <p className="font-bold mt-10">Why they matter</p>
-          <p className="mt-3">
+          <p className="font-bold mt-10 text-lg">Why they matter</p>
+          <p className="mt-3 text-lg">
             “Silent destroyers” that eat cellulose and can compromise structures
             before you notice damage.
           </p>
-          <div className="md:float-left">
+          <div className="float-right">
             <Image
               src="/Images/bugs/termites.png"
               alt="termites"
@@ -228,8 +226,8 @@ export default function page() {
             />
           </div>
           <div>
-            <p className="font-bold mt-5">Key signs</p>
-            <ul className="list-disc ml-8">
+            <p className="font-bold mt-5 text-lg">Key signs</p>
+            <ul className="list-disc ml-8 text-lg">
               <li>
                 Mud tubes on foundations/walls; hollow or papery wood; discarded
                 wings near windows/doors after swarms.
@@ -237,8 +235,8 @@ export default function page() {
             </ul>
           </div>
           <div>
-            <p className="font-bold mt-5">IPM prevention</p>
-            <ul className="list-disc ml-8">
+            <p className="font-bold mt-5 text-lg">IPM prevention</p>
+            <ul className="list-disc ml-8 text-lg">
               <li>
                 Fix moisture problems/grade water away; keep wood and mulch off
                 foundations; remove stumps/wood debris; schedule annual
@@ -247,8 +245,8 @@ export default function page() {
             </ul>
           </div>
           <div>
-            <p className="font-bold mt-5">Life Cycle</p>
-            <ul className="list-disc ml-8">
+            <p className="font-bold mt-5 text-lg">Life Cycle</p>
+            <ul className="list-disc ml-8 text-lg">
               <li>Egg → Nymph → Worker/Soldier/Queen</li>
               <li>
                 Colonies can last decades and contain millions of termites
@@ -256,8 +254,8 @@ export default function page() {
             </ul>
           </div>
           <div>
-            <p className="font-bold mt-5">Professional treatments</p>
-            <ul className="list-disc ml-8">
+            <p className="font-bold mt-5 text-lg">Professional treatments</p>
+            <ul className="list-disc ml-8 text-lg">
               <li>
                 Soil barrier termiticides around foundations, plus bait systems
                 to eliminate colonies; documentation & re-inspections to verify
@@ -265,7 +263,7 @@ export default function page() {
               </li>
             </ul>
           </div>
-          <p className="mt-10">
+          <p className="mt-10 text-lg">
             Known as “silent destroyers,” termites feed on cellulose in wood,
             books, and even drywall. In India, subterranean termites cause the
             most damage.
@@ -277,8 +275,8 @@ export default function page() {
           <div className="bg-[#2F3293] p-6 w-[100%] md:w-fit text-white font-bold rounded mx-auto md:mx-0 text-center">
             Birds (e.g., Pigeons) – Humane Control
           </div>
-          <p className="font-bold mt-10 md:text-right">Why they matter</p>
-          <p className="mt-3 md:text-right">
+          <p className="font-bold mt-10 md:text-right text-lg">Why they matter</p>
+          <p className="mt-3 md:text-right text-lg">
             Droppings can harbor Histoplasma and other pathogens; nests clog
             drains/HVAC and corrode surfaces. Prevention focuses on exclusion,
             not harm.
@@ -293,22 +291,20 @@ export default function page() {
             />
           </div>
           <div>
-            <p className="font-bold mt-5 md:text-right">Why They’re Dangerous</p>
-            <ul className="list-disc list-inside md:text-right">
+            <p className="font-bold mt-5 md:text-right text-lg">
+              Why They’re Dangerous
+            </p>
+            <ul className="list-disc list-inside md:text-right text-lg">
               <li>
                 Droppings carry pathogens like Histoplasmosis and Salmonella
               </li>
-              <li>
-                Acidic droppings corrode metal and paint
-              </li>
-              <li>
-                Nesting materials block drains and HVAC systems
-              </li>
+              <li>Acidic droppings corrode metal and paint</li>
+              <li>Nesting materials block drains and HVAC systems</li>
             </ul>
           </div>
           <div>
-            <p className="font-bold mt-5 md:text-right">IPM prevention</p>
-            <ul className="list-disc list-inside md:text-right">
+            <p className="font-bold mt-5 md:text-right text-lg">IPM prevention</p>
+            <ul className="list-disc list-inside md:text-right text-lg">
               <li>
                 Keep ledges/roofs clean; secure waste/food; remove standing
                 water; block roosts.
@@ -316,8 +312,10 @@ export default function page() {
             </ul>
           </div>
           <div>
-            <p className="font-bold mt-5 md:text-right">Professional treatments</p>
-            <ul className="list-disc list-inside md:text-right">
+            <p className="font-bold mt-5 md:text-right text-lg">
+              Professional treatments
+            </p>
+            <ul className="list-disc list-inside md:text-right text-lg">
               <li>
                 Netting, spikes, ledge modifications, visual/audio deterrents,
                 and sanitation of droppings using safe work
@@ -325,7 +323,7 @@ export default function page() {
               </li>
             </ul>
           </div>
-          <p className="mt-10 md:text-right float-right">
+          <p className="mt-10 md:text-right float-right text-lg">
             Birds often nest on rooftops, balconies, and machinery, leading to
             hygiene and safety issues.
           </p>
@@ -336,8 +334,8 @@ export default function page() {
           <div className="bg-[#2F3293] p-6 w-[100%] md:w-fit text-white font-bold rounded mx-auto md:mx-0 text-center">
             Mosquitoes
           </div>
-          <p className="font-bold mt-10">Why they matter</p>
-          <p className="mt-3">
+          <p className="font-bold mt-10 text-lg">Why they matter</p>
+          <p className="mt-3 text-lg">
             Mosquitoes are the deadliest animal to humans—transmitting malaria,
             dengue, chikungunya, Zika, yellow fever, and more.
           </p>
@@ -351,8 +349,8 @@ export default function page() {
             />
           </div>
           <div>
-            <p className="font-bold mt-5">Transmission & breeding</p>
-            <ul className="list-disc ml-8">
+            <p className="font-bold mt-5 text-lg">Transmission & breeding</p>
+            <ul className="list-disc ml-8 text-lg">
               <li>
                 Aedes aegypti/albopictus spread dengue and chikungunya; they
                 bite mainly daytime and lay eggs in small containers with
@@ -361,8 +359,8 @@ export default function page() {
             </ul>
           </div>
           <div>
-            <p className="font-bold mt-5">IPM prevention</p>
-            <ul className="list-disc ml-8">
+            <p className="font-bold mt-5 text-lg">IPM prevention</p>
+            <ul className="list-disc ml-8 text-lg">
               <li>
                 Eliminate stagnant water (pots, trays, tyres, gutters) weekly;
                 fit window/door screens; use larvicides where water can’t be
@@ -371,14 +369,14 @@ export default function page() {
             </ul>
           </div>
           <div>
-            <p className="font-bold mt-5">Life Cycle</p>
-            <ul className="list-disc ml-8">
+            <p className="font-bold mt-5 text-lg">Life Cycle</p>
+            <ul className="list-disc ml-8 text-lg">
               <li>Egg → Larva → Pupa → Adult (7–10 days)</li>
             </ul>
           </div>
           <div>
-            <p className="font-bold mt-5">Professional treatments</p>
-            <ul className="list-disc ml-8">
+            <p className="font-bold mt-5 text-lg">Professional treatments</p>
+            <ul className="list-disc ml-8 text-lg">
               <li>
                 Source reduction + larviciding for breeding sites; space
                 sprays/fogging only as part of outbreaks and combined with
@@ -386,12 +384,12 @@ export default function page() {
               </li>
             </ul>
           </div>
-          <p className="font-bold mt-5">Global burden</p>
-          <p className="mt-5">
+          <p className="font-bold mt-5 text-lg">Global burden</p>
+          <p className="mt-5 text-lg">
             Billions at risk of dengue; tens of thousands of deaths annually
             worldwide from vector-borne diseases.
           </p>
-          <p className="mt-5">
+          <p className="mt-5 text-lg">
             Mosquitoes are the deadliest insects in the world, spreading
             life-threatening diseases. They breed in stagnant water—even in
             small containers like flowerpots or bottle caps.
@@ -403,21 +401,21 @@ export default function page() {
           <div className="bg-[#2F3293] p-6 w-[100%] md:w-fit text-white font-bold rounded mx-auto md:mx-0 text-center">
             Flies (House/Drain/Fruit)
           </div>
-          <p className="font-bold mt-10 md:text-right">Why they matter</p>
-          <p className="mt-3 md:text-right">
+          <p className="font-bold mt-10 md:text-right text-lg">Why they matter</p>
+          <p className="mt-3 md:text-right text-lg">
             Filth flies mechanically transmit foodborne pathogens (e.g., E. coli
             O157:H7, Salmonella, Listeria) via contaminated body
             surfaces/regurgitation.
           </p>
           <div>
-            <p className="font-bold mt-5 md:text-right">Why They’re Dangerous</p>
-            <ul className="list-disc list-inside md:text-right">
+            <p className="font-bold mt-5 md:text-right text-lg">
+              Why They’re Dangerous
+            </p>
+            <ul className="list-disc list-inside md:text-right text-lg">
               <li>
                 Carry 100+ pathogens including Cholera, Typhoid, and Dysentery
               </li>
-              <li>
-                Contaminate food by regurgitating digestive fluids
-              </li>
+              <li>Contaminate food by regurgitating digestive fluids</li>
             </ul>
           </div>
           <div className="md:float-left">
@@ -430,8 +428,8 @@ export default function page() {
             />
           </div>
           <div>
-            <p className="font-bold mt-5 md:text-right">IPM prevention</p>
-            <ul className="list-disc list-inside md:text-right">
+            <p className="font-bold mt-5 md:text-right text-lg">IPM prevention</p>
+            <ul className="list-disc list-inside md:text-right text-lg">
               <li>
                 Sanitation: seal trash, clean spills, maintain drains; install
                 tight screens; manage produce storage; UV flylights in
@@ -440,8 +438,10 @@ export default function page() {
             </ul>
           </div>
           <div>
-            <p className="font-bold mt-5 md:text-right">Professional treatments</p>
-            <ul className="list-disc list-inside md:text-right">
+            <p className="font-bold mt-5 md:text-right text-lg">
+              Professional treatments
+            </p>
+            <ul className="list-disc list-inside md:text-right text-lg">
               <li>
                 Source sanitation, drain biofilm treatment, strategic
                 trapping/monitoring; targeted insecticides only after sources
@@ -449,7 +449,7 @@ export default function page() {
               </li>
             </ul>
           </div>
-          <p className="mt-10 md:text-right float-right">
+          <p className="mt-10 md:text-right float-right text-lg">
             Houseflies, fruit flies, and drain flies are common in India. They
             breed in garbage, drains, and organic waste.
           </p>
@@ -460,14 +460,14 @@ export default function page() {
           <div className="bg-[#2F3293] p-6 w-[100%] md:w-fit text-white font-bold rounded mx-auto md:mx-0 text-center">
             Rodents (Rats & Mice)
           </div>
-          <p className="font-bold mt-10">Why they matter</p>
-          <p className="mt-3">
+          <p className="font-bold mt-10 text-lg">Why they matter</p>
+          <p className="mt-3 text-lg">
             Rodents spread Leptospirosis, Hantavirus and contaminate food;
             gnawing can cause fires and equipment damage.
           </p>
           <div>
-            <p className="font-bold mt-5">Why They’re Dangerous</p>
-            <ul className="list-disc ml-8">
+            <p className="font-bold mt-5 text-lg">Why They’re Dangerous</p>
+            <ul className="list-disc ml-8 text-lg">
               <li>Spread Hantavirus, Leptospirosis, Plague</li>
               <li>Gnaw wires (fire risk) and contaminate food storage</li>
               <li>Damage crops and packaging in warehouses</li>
@@ -483,8 +483,8 @@ export default function page() {
             />
           </div>
           <div>
-            <p className="font-bold mt-5">IPM prevention</p>
-            <ul className="list-disc ml-8">
+            <p className="font-bold mt-5 text-lg">IPM prevention</p>
+            <ul className="list-disc ml-8 text-lg">
               <li>
                 Seal entry holes ≥ 6–7 mm; door sweeps; store food airtight;
                 remove clutter; maintain landscaping and drainage.
@@ -492,8 +492,8 @@ export default function page() {
             </ul>
           </div>
           <div>
-            <p className="font-bold mt-5">Life Cycle</p>
-            <ul className="list-disc ml-8">
+            <p className="font-bold mt-5 text-lg">Life Cycle</p>
+            <ul className="list-disc ml-8 text-lg">
               <li>
                 Reproduce rapidly: a pair can produce up to 2,000 offspring in a
                 year
@@ -501,8 +501,8 @@ export default function page() {
             </ul>
           </div>
           <div>
-            <p className="font-bold mt-5">Professional treatments</p>
-            <ul className="list-disc ml-8">
+            <p className="font-bold mt-5 text-lg">Professional treatments</p>
+            <ul className="list-disc ml-8 text-lg">
               <li>
                 Exclusion + sanitation; snap traps and tamper-resistant bait
                 stations where justified; safe cleanup of droppings/nests using
@@ -510,7 +510,7 @@ export default function page() {
               </li>
             </ul>
           </div>
-          <p className="mt-5">
+          <p className="mt-5 text-lg">
             Rodents damage property, chew wires, and spread diseases. Common
             species in India: House mouse, Norway rat, and Roof rat.
           </p>
@@ -521,20 +521,20 @@ export default function page() {
           <div className="bg-[#2F3293] p-6 w-[100%] md:w-fit text-white font-bold rounded mx-auto md:mx-0 text-center">
             Ants (including Carpenter Ants)
           </div>
-          <p className="font-bold mt-10 md:text-right">Why they matter</p>
-          <p className="mt-3 md:text-right">
+          <p className="font-bold mt-10 md:text-right text-lg">Why they matter</p>
+          <p className="mt-3 md:text-right text-lg">
             Ants contaminate food; carpenter ants excavate wood causing
             structural issues. Effective control targets the colony, not just
             foragers.
           </p>
           <div>
-            <p className="font-bold mt-5 md:text-right">Why They’re Dangerous</p>
-            <ul className="list-disc list-inside md:text-right mt-3">
+            <p className="font-bold mt-5 md:text-right text-lg">
+              Why They’re Dangerous
+            </p>
+            <ul className="list-disc list-inside md:text-right mt-3 text-lg">
               <li>Contaminate food and storage</li>
               <li>Painful stings (fire ants)</li>
-              <li>
-                Carpenter ants damage wooden structures
-              </li>
+              <li>Carpenter ants damage wooden structures</li>
             </ul>
           </div>
           <div className="md:float-left">
@@ -547,8 +547,8 @@ export default function page() {
             />
           </div>
           <div>
-            <p className="font-bold mt-5 md:text-right">IPM prevention</p>
-            <ul className="list-disc list-inside md:text-right mt-3">
+            <p className="font-bold mt-5 md:text-right text-lg">IPM prevention</p>
+            <ul className="list-disc list-inside md:text-right mt-3 text-lg">
               <li>
                 Eliminate food/water sources (sugar/grease spills); seal entry
                 points; prune vegetation off walls; manage moisture.
@@ -558,8 +558,10 @@ export default function page() {
             </ul>
           </div>
           <div>
-            <p className="font-bold mt-5 md:text-right">Professional treatments</p>
-            <ul className="list-disc list-inside md:text-right mt-3">
+            <p className="font-bold mt-5 md:text-right text-lg">
+              Professional treatments
+            </p>
+            <ul className="list-disc list-inside md:text-right mt-3 text-lg">
               <li>
                 Species ID → bait strategy (sweet/protein based by
                 species/season) + spot treatments; for carpenter ants, address
@@ -567,7 +569,7 @@ export default function page() {
               </li>
             </ul>
           </div>
-          <p className="mt-10 md:text-right float-right">
+          <p className="mt-10 md:text-right float-right text-lg">
             Ants live in colonies with thousands of members. Common species in
             India: Black ants, red ants, and carpenter ants.
           </p>
@@ -575,7 +577,7 @@ export default function page() {
 
         {/* Yellow section */}
         <div className="bg-gradient-to-b from-[#FFF300] to-[#FEBA00] relative mt-52 pt-10 px-10 md:px-20 pb-80 rounded-4xl flex flex-col gap-7">
-          <p>
+          <p className="text-lg">
             At Orion Pest Solutions, we believe that effective pest control goes
             far beyond just spraying chemicals. That is why we follow the
             principles of Integrated Pest Management (IPM), a scientifically
@@ -589,7 +591,7 @@ export default function page() {
             environmentally conscious solutions that not only eliminate existing
             pests but also prevent future infestations.
           </p>
-          <p>
+          <p className="text-lg">
             We provide specialized solutions for a wide range of pests. For
             cockroaches, which are resilient and often hide in dark, moist
             places, we use targeted baits and gel treatments while also helping
@@ -605,7 +607,7 @@ export default function page() {
             spikes, and sound-based systems to keep them away without harming
             them.
           </p>
-          <p>
+          <p className="text-lg">
             When it comes to mosquitoes and flies, both notorious carriers of
             diseases, Orion offers long-lasting larvicide treatments, fogging,
             and habitat management to control breeding grounds. For rodents such
@@ -615,7 +617,7 @@ export default function page() {
             apply eco-safe sprays, gels, and colony-targeting treatments to
             deliver lasting relief.
           </p>
-          <p>
+          <p className="text-lg">
             What sets Orion Pest Solutions apart is not only our technical
             expertise but also our commitment to prevention. With every service,
             we provide clients with guidance on cleanliness, waste management,
@@ -626,7 +628,7 @@ export default function page() {
             only applied when necessary, reducing unnecessary chemical use and
             ensuring the safety of your family, pets, and the environment.
           </p>
-          <p>
+          <p className="text-lg">
             Orion Pest Solutions is more than just a pest control service
             provider – we are a trusted partner in protecting your health,
             property, and peace of mind. Whether you are dealing with stubborn

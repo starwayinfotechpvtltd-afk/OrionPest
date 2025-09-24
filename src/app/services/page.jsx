@@ -68,7 +68,7 @@ export default function page() {
         </h2>
 
         {/* Intro text */}
-        <p className="mt-6 text-black text-sm md:text-base leading-relaxed text-center md:text-left">
+        <p className="mt-6 text-black text-lg leading-relaxed text-center md:text-left">
           At Orion, we believe effective pest management goes beyond
           treatment—it starts with the right strategy. Our team partners closely
           with every client to understand their unique challenges, environment,
@@ -90,7 +90,7 @@ export default function page() {
                   <h4 className="text-[#48C4FF] text-center text-lg sm:text-xl font-semibold">
                     {box.heading}
                   </h4>
-                  <p className="text-white text-center mt-2 text-sm sm:text-base">
+                  <p className="text-white text-center mt-2 text-lg">
                     {box.desc}
                   </p>
                 </div>
@@ -111,7 +111,7 @@ export default function page() {
           <h2 className="text-center text-2xl sm:text-3xl font-bold text-[#2F3293]">
             OUR SERVICES
           </h2>
-          <p className="text-center mt-4 sm:mt-6 text-sm sm:text-base max-w-2xl mx-auto">
+          <p className="text-center mt-4 sm:mt-6 text-lg max-w-2xl mx-auto">
             Trusted pest control designed for homes and businesses. We combine
             expert strategies with proven techniques. Safe, eco-friendly
             solutions that deliver lasting protection.

@@ -85,26 +85,26 @@ export default function Home() {
   return (
     <div className="w-full">
       <div className="w-[95%] md:w-[80%] mx-auto">
-        <h2 className="text-[#2F3293] text-3xl md:text-5xl font-bold font-sans mx-auto text-center mt-20">
+        <h2 className="text-[#2F3293] text-2xl md:text-5xl font-bold font-sans mx-auto text-center mt-20">
           We Are The Best <br /> Pest Control Company in India
         </h2>
         <h5 className="text-2xl text-center text-[#0094DA] mt-5 font-bold">
           Orion Pest Solutions Pvt. Ltd
         </h5>
-        <p className="text-center mt-5 text-2xl">
+        <p className="md:text-center mt-5 text-lg text-justify">
           The most trusted and reliable company providing the best pest control
           solutions in India.
         </p>
 
-        <p className="text-center mt-5 w-[60%] mx-auto text-lg">
+        <p className="text-center mt-5 md:w-[60%] mx-auto text-lg">
           Established in 1998, we are constantly pushing the envelope with
           innovations in the niche industry. Today, we take pride in identifying
           ourselves as the pioneers of the pest management industry.
         </p>
 
-        <p className="text-center mt-5 text-lg">
+        <p className="md:text-center text-justify mt-8 text-md text-lg">
           Boasting of an expansive pan-India presence, we operate in{" "}
-          <span className="font-bold text-black">
+          <span className="font-semibold md:font-bold text-black">
             Delhi, Mumbai, Bangalore, Chennai, Hyderabad, Pune, Ahmedabad,
             Jaipur, Indore, Kolhapur, Kodaikanal, Dehradun, Mysore, Coimbatore,
             Vijayawada, Bilaspur, Puducherry, Aurangabad, Burdwan,
@@ -117,8 +117,8 @@ export default function Home() {
 
       {/* Blue area */}
       <div className="bg-linear-to-br from-cyan-500 to-blue-500 w-full mt-20 p-10 mb-10 md:mb-20 border-b-8 border-blue-800">
-        <div className="md:w-[80%] flex justify-evenly mx-auto">
-          <p className="w-full md:w-[50%] text-white text-justify">
+        <div className="md:w-[80%] flex flex-col-reverse md:flex-row justify-evenly mx-auto">
+          <p className="w-full md:w-[50%] text-white text-justify text-lg">
             Our vast experience, helmed by state-of-the-art technology, keeps
             you protected from every kind of pest menace. At Orion Pest
             Solutions Pvt. Ltd., we relentlessly strive to deliver the best pest
@@ -159,7 +159,7 @@ export default function Home() {
             alt="img1"
             height={250}
             width={250}
-            className="hidden md:block"
+            className="mx-auto"
           />
         </div>
       </div>
@@ -172,7 +172,7 @@ export default function Home() {
             <h3 className="text-2xl font-bold text-[#2F3293]">
               PAN INDIA SERVICES
             </h3>
-            <p className="text-base whitespace-normal break-words">
+            <p className="whitespace-normal break-words text-lg">
               Orion Pest Solutions Private Limited provides a range of pest
               control services in more than 40 locations in India including
               Nepal and Bhutan.
@@ -184,7 +184,7 @@ export default function Home() {
             <h3 className="text-2xl font-bold text-[#2F3293] md:text-end">
               COST EFFECTIVE SOLUTIONS
             </h3>
-            <p className="text-base whitespace-normal break-words md:text-end">
+            <p className="text-lg whitespace-normal break-words md:text-end">
               Orion Pest Solutions Private Limited provides a range of pest
               control services in more than 40 locations in India including
               Nepal and Bhutan.
@@ -198,7 +198,7 @@ export default function Home() {
             <h3 className="text-2xl font-bold text-[#2F3293]">
               GUARANTEED RESULTS
             </h3>
-            <p className="text-base whitespace-normal break-words">
+            <p className="text-lg whitespace-normal break-words">
               With our indepth experience over 18 years, we continue to enhance
               our operational excellence, safety, capability, customer service
               and innovations.
@@ -210,7 +210,7 @@ export default function Home() {
             <h3 className="text-2xl font-bold text-[#2F3293] md:text-end">
               Home
             </h3>
-            <p className="text-base whitespace-normal break-words md:text-end">
+            <p className="text-lg whitespace-normal break-words md:text-end">
               RESIDENTIAL PEST CONTROL SERVICES COMMERCIAL PEST CONTROL SERVICES
               FUMIGATION PEST CONTROL SERVICES TERMITE PEST CONTROL SERVICES
             </p>

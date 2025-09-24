@@ -15,7 +15,7 @@ export default function Page() {
 
         {/* Intro Section */}
         <div className="flex flex-col lg:flex-row justify-between items-center mt-8 gap-6">
-          <p className="w-full lg:w-1/2 text-base md:text-lg leading-relaxed">
+          <p className="w-full lg:w-1/2 text-lg leading-relaxed">
             Bed bugs are a nightmare for homeowners and travelers alike, feeding
             on blood and leaving behind itchy, red welts. They are master
             hiders, often found in mattresses, furniture, and cracks in the
@@ -38,7 +38,7 @@ export default function Page() {
           <h3 className="text-[#0094DA] text-2xl md:text-3xl lg:text-4xl font-bold">
             Why Bed Bug Control is Important
           </h3>
-          <ul className="list-disc ml-5 md:ml-8 mt-3 grid grid-cols-1 lg:grid-cols-2 gap-3 text-base md:text-lg">
+          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-3 text-lg">
             <li>
               <span className="font-bold">Cause severe itching and discomfort:</span>{" "}
               Bed bug bites can lead to incessant scratching, which may result
@@ -76,11 +76,11 @@ export default function Page() {
           <h3 className="text-[#0094DA] text-2xl md:text-3xl lg:text-4xl font-bold">
             Our Approach
           </h3>
-          <p className="font-bold text-base md:text-lg mt-2">
+          <p className="font-bold text-lg mt-2">
             We follow a thorough, multi-step process to eliminate bed bugs from
             your home:
           </p>
-          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-3 text-base md:text-lg">
+          <ul className="list-disc ml-5 md:ml-8 mt-3 flex flex-col gap-3 text-lg">
             <li>
               <span className="font-bold">Inspection:</span> Our experts conduct
               a detailed inspection to locate all bed bug hiding spots,
@@ -112,7 +112,7 @@ export default function Page() {
           <h3 className="text-[#0094DA] text-2xl md:text-3xl lg:text-4xl font-bold">
             Pros
           </h3>
-          <ul className="list-disc ml-5 md:ml-8 mt-3 grid grid-cols-1 lg:grid-cols-2 gap-3 text-base md:text-lg">
+          <ul className="list-disc ml-5 md:ml-8 mt-3 grid grid-cols-1 lg:grid-cols-2 gap-3 text-lg">
             <li>
               <span className="font-bold">Highly effective:</span> Our
               treatments are designed to eliminate bed bugs at all life stages,
@@ -143,7 +143,7 @@ export default function Page() {
           <h2 className="text-[#2F3293] text-3xl md:text-4xl lg:text-5xl text-center font-bold mt-10">
             Why Choose Orion for Bed Bug Control?
           </h2>
-          <ul className="list-disc ml-5 md:ml-8 mt-6 grid grid-cols-1 lg:grid-cols-2 gap-3 text-base md:text-lg">
+          <ul className="list-disc ml-5 md:ml-8 mt-6 flex flex-col gap-3 text-lg">
             <li>
               <span className="font-bold">Eco-Friendly Methods:</span> Safe,
               odorless, and pet-friendly treatments.
