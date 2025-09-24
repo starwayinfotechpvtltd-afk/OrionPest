@@ -22,20 +22,18 @@ export default function Footer({ color }) {
       <div className="relative w-[90%] md:w-[60%] mx-auto flex flex-col items-center">
         {/* heading */}
         <h2 className="text-[#FEF200] text-2xl md:text-3xl font-bold text-center">
-          HAVE ANY QUESTIONS
+          HAVE ANY QUESTIONS?
         </h2>
         <p className="text-center text-white mt-2 text-sm md:text-base">
           We’re here to help—get in touch with us today.
         </p>
         {/* input */}
         <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 md:gap-20 justify-center mt-5 w-full">
-          <p className="text-white text-center sm:text-left">
-            Enter Your Email here:
-          </p>
+          
           <input
             type="text"
-            className="p-3 rounded-3xl bg-white w-full sm:w-80"
-            placeholder="Your email"
+            className="p-3 rounded-3xl bg-white w-full sm:w-80 text-black placeholder:text-gray-400"
+            placeholder="Enter your email"
           />
         </div>
         {/* button */}
@@ -43,9 +41,9 @@ export default function Footer({ color }) {
           Contact Us
         </button>
         {/* contact info */}
-        <div className="flex flex-col md:flex-row items-center md:items-start justify-between mt-8 gap-6 w-full text-center md:text-left">
+        <div className="flex flex-col md:flex-row items-center md:items-start justify-between mt-8 gap-6 w-full text-center">
           {/* address */}
-          <div className="flex-1">
+          <div className="flex-1 text-center md:text-left">
             <p className="text-white">Orion Pest Solutions Pvt. Ltd.</p>
             <p className="text-white">200W, S.P. Mukherjee Road</p>
             <p className="text-white">Kolkata - 700026, West Bengal, India.</p>
@@ -55,7 +53,7 @@ export default function Footer({ color }) {
           <p className="text-white flex-1">sales@orionpest.com</p>
 
           {/* phone */}
-          <div className="flex-1">
+          <div className="flex-1 text-center md:text-right">
             <p className="text-white">1800 419 8181</p>
             <p className="text-white">9800123456</p>
           </div>
