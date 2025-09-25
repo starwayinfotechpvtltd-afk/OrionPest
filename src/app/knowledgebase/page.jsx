@@ -216,7 +216,7 @@ export default function page() {
             “Silent destroyers” that eat cellulose and can compromise structures
             before you notice damage.
           </p>
-          <div className="float-right">
+          <div className="md:float-right">
             <Image
               src="/Images/bugs/termites.png"
               alt="termites"

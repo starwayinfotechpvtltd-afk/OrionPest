@@ -158,7 +158,7 @@ export default function Home() {
             src="/Images/img1.png"
             alt="img1"
             height={250}
-            width={250}
+            width={300}
             className="mx-auto"
           />
         </div>

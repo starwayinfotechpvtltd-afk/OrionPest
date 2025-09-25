@@ -5,7 +5,7 @@ import { RiPokerDiamondsFill } from "react-icons/ri";
 const badges = [
   {
     id: 1,
-    image: "",
+    image: "/Images/about1.png",
     text: "100%",
   },
   {
@@ -54,7 +54,7 @@ export default function page() {
             >
               <div className="bg-[#FEF200] rounded-full p-3 md:p-4">
                 <Image
-                  src={badge?.image || "/Images/about2.png"}
+                  src={badge?.image}
                   alt={badge.text}
                   height={35}
                   width={35}
