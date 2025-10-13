@@ -83,7 +83,7 @@ export default function Navbar() {
                     activeTab === nav.href
                       ? "text-[#2F3293]"
                       : "text-gray-700 hover:text-[#2F3293]"
-                  } font-bold text-sm md:text-base`}
+                  } font-bold text-md md:text-base`}
               >
                 {nav.text}
               </Link>
