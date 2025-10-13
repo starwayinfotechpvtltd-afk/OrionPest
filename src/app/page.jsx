@@ -96,13 +96,25 @@ export default function Home() {
           solutions in India.
         </p>
 
-        <p className="text-center mt-5 md:w-[60%] mx-auto text-lg">
+        <p className="text-center mt-5 md:w-[50%] mx-auto text-lg">
           Established in 1998, we are constantly pushing the envelope with
           innovations in the niche industry. Today, we take pride in identifying
           ourselves as the pioneers of the pest management industry.
         </p>
-
-        <p className="md:text-center text-justify mt-8 text-md text-lg">
+        <div className="flex flex-col md:flex-row gap-10 items-center bg-[#FEF202] rounded-3xl mt-10 w-full">
+          <div className="h-[300px] md:h-[600px] w-[100%] md:w-[60%] relative">
+            <Image
+              src={"/images/img3.png"}
+              fill
+              className="rounded-tl-3xl md:rounded-bl-3xl rounded-tr-3xl md:rounded-tr-0 object-cover"
+              alt="image" />
+          </div>
+          <div className="md:w-[50%] font-bold text-[#2F3293] flex flex-col gap-10 md:gap-20 items-center justify-center pr-10 px-10 md:pl-0 pb-10">
+            <p className="text-justify text-md">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop </p>
+            <button className="rounded-xl bg-[#2F3293] text-white px-10 py-2">Get a Free Quote <br /> Call Now</button>
+          </div>
+        </div>
+        <p className="md:text-center px-2 text-justify mt-8 text-md text-lg mt-10">
           Boasting of an expansive pan-India presence, we operate in{" "}
           <span className="font-semibold md:font-bold text-black">
             Delhi, Mumbai, Bangalore, Chennai, Hyderabad, Pune, Ahmedabad,
@@ -117,103 +129,110 @@ export default function Home() {
 
       {/* Blue area */}
       <div className="bg-linear-to-br from-cyan-500 to-blue-500 w-full mt-20 p-10 mb-10 md:mb-20 border-b-8 border-blue-800">
-        <div className="md:w-[80%] flex flex-col-reverse md:flex-row justify-evenly mx-auto">
-          <p className="w-full md:w-[50%] text-white text-justify text-lg">
-            Our vast experience, helmed by state-of-the-art technology, keeps
-            you protected from every kind of pest menace. At Orion Pest
-            Solutions Pvt. Ltd., we relentlessly strive to deliver the best pest
-            control services in India, combining proven expertise with modern,
-            science-backed techniques. <br></br> We provide prompt, affordable,
-            and efficient pest control solutions designed to eliminate
-            infestations quickly while ensuring long-term protection. Our
-            comprehensive range of services covers Commercial Pest Control,
-            Residential Pest Control, Herbal Pest Control, Termite Control,
-            Mosquito Control, Rodent Control, and more. Whether it is your home,
-            office, warehouse, or industrial space, we are available 24/7 at
-            your service, offering tailor-made solutions to suit every
-            requirement. <br></br>
-            Headquartered in Kolkata, Orion has steadily grown to become one of
-            the most trusted pest management companies in India, with a strong
-            presence across multiple cities. Over the years, we have
-            successfully catered to residential societies, corporate offices,
-            hospitals, hotels, educational institutions, and government
-            establishments—building long-term relationships with clients who
-            value our professionalism. <br></br> What sets us apart is our team
-            of highly trained experts who understand the root cause of
-            infestations and eliminate pests at the source. We don’t just
-            control pests; we create safe, hygienic, and pest-free environments
-            that give you peace of mind. Most importantly, we strictly use safe,
-            eco-friendly, and government-approved chemicals to protect your
-            health, property, and the environment. <br></br> At Orion, we
-            believe pest control is not just about extermination—it’s about
-            prevention, protection, and lasting peace of mind. Our mission is
-            simple: to safeguard your surroundings, enhance your quality of
-            life, and make your spaces healthier and more comfortable. <br></br>{" "}
-            So, if you are looking for India’s most reliable pest control
-            partner, look no further. With Orion Pest Solutions Pvt. Ltd.,
-            you’re not just hiring a service—you’re choosing a lifelong shield
-            against pests.
-          </p>
-          <Image
-            src="/Images/img1.png"
-            alt="img1"
-            height={250}
-            width={300}
-            className="mx-auto"
-          />
+        <div className="w-[95%] md:w-[80%] mx-auto">
+        <p className="w-full text-white text-justify text-lg">
+          Our vast experience, helmed by state-of-the-art technology, keeps
+          you protected from every kind of pest menace. At Orion Pest
+          Solutions Pvt. Ltd., we relentlessly strive to deliver the best pest
+          control services in India, combining proven expertise with modern,
+          science-backed techniques. <br></br> We provide prompt, affordable,
+          and efficient pest control solutions designed to eliminate
+          infestations quickly while ensuring long-term protection. Our
+          comprehensive range of services covers Commercial Pest Control,
+          Residential Pest Control, Herbal Pest Control, Termite Control,
+          Mosquito Control, Rodent Control, and more. Whether it is your home,
+          office, warehouse, or industrial space, we are available 24/7 at
+          your service, offering tailor-made solutions to suit every
+          requirement. <br></br>
+          Headquartered in Kolkata, Orion has steadily grown to become one of
+          the most trusted pest management companies in India, with a strong
+          presence across multiple cities. Over the years, we have
+          successfully catered to residential societies, corporate offices,
+          hospitals, hotels, educational institutions, and government
+          establishments—building long-term relationships with clients who
+          value our professionalism. <br></br> What sets us apart is our team
+          of highly trained experts who understand the root cause of
+          infestations and eliminate pests at the source. We don’t just
+          control pests; we create safe, hygienic, and pest-free environments
+          that give you peace of mind. Most importantly, we strictly use safe,
+          eco-friendly, and government-approved chemicals to protect your
+          health, property, and the environment. <br></br> At Orion, we
+          believe pest control is not just about extermination—it’s about
+          prevention, protection, and lasting peace of mind. Our mission is
+          simple: to safeguard your surroundings, enhance your quality of
+          life, and make your spaces healthier and more comfortable. <br></br>{" "}
+          So, if you are looking for India’s most reliable pest control
+          partner, look no further. With Orion Pest Solutions Pvt. Ltd.,
+          you’re not just hiring a service—you’re choosing a lifelong shield
+          against pests.
+        </p>
         </div>
       </div>
 
+      {/* Form area */}
+      <div className="w-[90%] md:w-[600px] bg-[#2F3293] rounded-3xl mx-auto p-10">
+        <h2 className="text-4xl text-white font-bold text-center mb-3">FAQ</h2>
+        <h2 className="text-4xl text-white font-bold text-center mb-8">DUMMY TEXT</h2>
+        <form action="" className="flex flex-col gap-5">
+          <input type="text" className="bg-white p-3 rounded" placeholder="Your placeholder" />
+          <input type="text" className="bg-white p-3 rounded" placeholder="Your placeholder" />
+          <input type="text" className="bg-white p-3 rounded" placeholder="Your placeholder" />
+          <input type="text" className="bg-white p-3 rounded" placeholder="Your placeholder" />
+        </form>
+      </div>
+
       {/* Grid area */}
-      <div className="w-[90%] md:w-full mx-auto">
+      <div className="w-[90%] md:w-full mx-auto mt-20">
         <div className="md:flex justify-between items-center gap-4 md:w-[60%] mx-auto">
           {/* left */}
-          <div className="flex-1 min-w-0 flex flex-col gap-2">
-            <h3 className="text-2xl font-bold text-[#2F3293]">
-              PAN INDIA SERVICES
-            </h3>
-            <p className="whitespace-normal break-words text-lg">
-              Orion Pest Solutions Private Limited provides a range of pest
-              control services in more than 40 locations in India including
-              Nepal and Bhutan.
-            </p>
+          <div className="flex-1 min-w-0 flex flex-col gap-8">
+            <div className="flex flex-col gap-3">
+              <h3 className="text-2xl font-bold text-[#2F3293]">
+                PAN INDIA SERVICES
+              </h3>
+              <p className="whitespace-normal break-words text-lg">
+                Orion Pest Solutions Private Limited provides a range of pest
+                control services in more than 40 locations in India including
+                Nepal and Bhutan.
+              </p>
+            </div>
+            <div className="flex flex-col gap-3">
+              <h3 className="text-2xl font-bold text-[#2F3293]">
+                GUARANTEED RESULTS
+              </h3>
+              <p className="text-lg whitespace-normal break-words">
+                With our indepth experience over 18 years, we continue to enhance
+                our operational excellence, safety, capability, customer service
+                and innovations.
+              </p>
+            </div>
+            <div className="flex flex-col gap-3">
+              <h3 className="text-2xl font-bold text-[#2F3293]">
+                COST EFFECTIVE SOLUTIONS
+              </h3>
+              <p className="text-lg whitespace-normal break-words">
+                Orion Pest Solutions Private Limited provides a range of pest
+                control services in more than 40 locations in India including
+                Nepal and Bhutan.
+              </p>
+            </div>
+            <div className="flex flex-col gap-3">
+              <h3 className="text-2xl font-bold text-[#2F3293]">
+                Home
+              </h3>
+              <p className="text-lg whitespace-normal break-words">
+                RESIDENTIAL PEST CONTROL SERVICES COMMERCIAL PEST CONTROL SERVICES
+                FUMIGATION PEST CONTROL SERVICES TERMITE PEST CONTROL SERVICES
+              </p>
+            </div>
           </div>
-
-          {/* right */}
-          <div className="flex-1 min-w-0 flex flex-col gap-2 mt-10 md:mt-0">
-            <h3 className="text-2xl font-bold text-[#2F3293] md:text-end">
-              COST EFFECTIVE SOLUTIONS
-            </h3>
-            <p className="text-lg whitespace-normal break-words md:text-end">
-              Orion Pest Solutions Private Limited provides a range of pest
-              control services in more than 40 locations in India including
-              Nepal and Bhutan.
-            </p>
-          </div>
-        </div>
-
-        <div className="md:flex justify-between items-center gap-4 md:w-[60%] mx-auto mt-9">
-          {/* left */}
-          <div className="flex-1 min-w-0 flex flex-col gap-2">
-            <h3 className="text-2xl font-bold text-[#2F3293]">
-              GUARANTEED RESULTS
-            </h3>
-            <p className="text-lg whitespace-normal break-words">
-              With our indepth experience over 18 years, we continue to enhance
-              our operational excellence, safety, capability, customer service
-              and innovations.
-            </p>
-          </div>
-
-          {/* right */}
-          <div className="flex-1 min-w-0 flex flex-col gap-2 mt-10 md:mt-0">
-            <h3 className="text-2xl font-bold text-[#2F3293] md:text-end">
-              Home
-            </h3>
-            <p className="text-lg whitespace-normal break-words md:text-end">
-              RESIDENTIAL PEST CONTROL SERVICES COMMERCIAL PEST CONTROL SERVICES
-              FUMIGATION PEST CONTROL SERVICES TERMITE PEST CONTROL SERVICES
-            </p>
+          <div className="h-[500px] md:h-[650px] w-full md:w-[40%] relative">
+            <Image
+              src="/Images/img1.png"
+              alt="img1"
+              fill
+              className="mx-auto"
+            />
           </div>
         </div>
       </div>

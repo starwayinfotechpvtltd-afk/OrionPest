@@ -1,0 +1,74 @@
+[
+    {
+        "service": "Cockroach Control",
+        "link": "cockroach-control",
+        "image": "/Images/bugs/cockroach_control.png",
+        "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "service": "Bed bugs Control",
+        "link": "bedbug-control",
+        "image": "/Images/bugs/bedBug_control.png",
+        "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "service": "Termite Control",
+        "link": "termite-control",
+        "image": "/Images/bugs/termite_control.png",
+        "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "service": "Mosquito Control",
+        "link": "mosquito-control",
+        "image": "/Images/bugs/mosquito_control.png",
+        "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "service": "Flies Control",
+        "link": "flies-control",
+        "image": "/Images/bugs/flies_control.png",
+        "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "service": "Rodent Control",
+        "link": "rodent-control",
+        "image": "/Images/bugs/rodent_control.png",
+        "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "service": "Bird Control",
+        "link": "bird-control",
+        "image": "/Images/bugs/bird_control.png",
+        "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "service": "Ant Control",
+        "link": "ant-control",
+        "image": "/Images/bugs/ant_control.png",
+        "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "service": "Residential Control",
+        "link": "residential-control",
+        "image": "/Images/bugs/resident_control.png",
+        "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "service": "Commercial Control",
+        "link": "commercial-control",
+        "image": "/Images/bugs/commercial_control.png",
+        "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "service": "Herbal Pest Control",
+        "link": "herbal-pest-control",
+        "image": "/Images/bugs/herbal_control.png",
+        "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "service": "Fumigation Control",
+        "link": "fumigation-control",
+        "image": "/Images/bugs/fumigation_control.png",
+        "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+]

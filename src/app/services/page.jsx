@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
+import services from "./services.json";
 
 const boxes = [
   {
@@ -24,40 +25,48 @@ const boxes = [
   },
 ];
 
-const services = [
-  {
-  service: "Cockroach Control",
-  link: "cockroach-control"
-  },
-  {
-  service: "Bed bugs Control",
-  link: "bedbug-control"
-  },
-  {
-  service: "Termite Control",
-  link: "termite-control"
-  },
-  {
-  service: "Mosquito Control",
-  link: "mosquito-control"
-  },
-  {
-  service: "Flies Control",
-  link: "flies-control"
-  },
-  {
-  service: "Rodent Control",
-  link: "rodent-control"
-  },
-  {
-  service: "Bird Control",
-  link: "bird-control"
-  },
-  {
-  service: "Ant Control",
-  link: "ant-control"
-  }
-];
+// const services = [
+//   {
+//   service: "Cockroach Control",
+//   link: "cockroach-control"
+//   },
+//   {
+//   service: "Bed bugs Control",
+//   link: "bedbug-control"
+//   },
+//   {
+//   service: "Termite Control",
+//   link: "termite-control"
+//   },
+//   {
+//   service: "Mosquito Control",
+//   link: "mosquito-control"
+//   },
+//   {
+//   service: "Flies Control",
+//   link: "flies-control"
+//   },
+//   {
+//   service: "Rodent Control",
+//   link: "rodent-control"
+//   },
+//   {
+//   service: "Bird Control",
+//   link: "bird-control"
+//   },
+//   {
+//   service: "Ant Control",
+//   link: "ant-control"
+//   }
+// ];
+
+
+// Generate paths for all branches
+
+
+console.log(services)
+const [, ...restServices] = services;
+console.log(restServices)
 export default function page() {
   return (
     <div className="w-full pb-60 sm:pb-60 md:pb-80">
@@ -119,18 +128,23 @@ export default function page() {
         </div>
 
         {/* Services list */}
-        <div className="mt-10 md:mt-20 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="mt-10 md:mt-20 grid grid-cols-1 md:grid-cols-3 gap-10">
           {services.map((service, index) => (
-            <Link
-              key={index}
-              className="flex items-center gap-3 group cursor-pointer w-fit"
-              href={`services/${service.link}`}
-            >
-              <FaArrowRightLong className="text-xl sm:text-2xl font-bold text-[#2F3293] transform transition-transform duration-300 group-hover:translate-x-2" />
-              <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-[#2F3293]">
+            <div key={index} className="flex flex-col items-center text-center">
+              <Image src={service.image} height={120} width={120} alt={service.service} />
+              <h4 className="text-[#2F3293] font-semibold text-2xl mt-4">
                 {service.service}
-              </h2>
-            </Link>
+              </h4>
+              <div className="bg-[#FEF200] p-5 rounded-2xl mt-4">
+                <p>{service.text}</p>
+                <Link
+                  className="flex items-center gap-3 group cursor-pointer w-fit text-center mx-auto mt-3"
+                  href={`services/${service.link}`}
+                >
+                  <p className="text-[#2F3293] text-center hover:underline text-lg font-bold mt-3">Read more</p>
+                </Link>
+              </div>
+            </div>
           ))}
         </div>
       </div>
