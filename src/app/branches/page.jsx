@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Map from "@/components/ui/Map"
 
 export default function page() {
   const India = [
@@ -228,7 +229,7 @@ export default function page() {
         {/* For Nepal */}
         <div className="w-full bg-gradient-to-b from-[#FFF300] to-[#FEBA00] relative px-4 rounded-tl-4xl rounded-tr-4xl py-10 relative -top-20 pb-36">
           <h3 className="text-[#2F3293] text-2xl sm:text-3xl lg:text-4xl text-center font-bold">
-            NEPAL
+            NEPAL/BHUTAN
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-10 items-center justify-items-center">
             {other.map((loc, index) => (
@@ -248,6 +249,7 @@ export default function page() {
               Email: orionpestnepal@gmail.com
             </Link>
           </div>
+          <Map />
         </div>
       </div>
     </div>

@@ -49,25 +49,25 @@
     },
     {
         "service": "Residential Control",
-        "link": "residential-control",
+        "link": "residential",
         "image": "/Images/bugs/resident_control.png",
         "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
         "service": "Commercial Control",
-        "link": "commercial-control",
+        "link": "commercial",
         "image": "/Images/bugs/commercial_control.png",
         "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
         "service": "Herbal Pest Control",
-        "link": "herbal-pest-control",
+        "link": "herbal",
         "image": "/Images/bugs/herbal_control.png",
         "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
         "service": "Fumigation Control",
-        "link": "fumigation-control",
+        "link": "fumigation",
         "image": "/Images/bugs/fumigation_control.png",
         "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }

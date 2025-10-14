@@ -2,11 +2,12 @@
 import React from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export default function Footer({ color }) {
   const pathname = usePathname();
   const isContact = pathname.startsWith("/contact");
-   // ${!isContact ? "bg-linear-to-br from-[#ffd900] to-[#ff9900]":"white"}
+  // ${!isContact ? "bg-linear-to-br from-[#ffd900] to-[#ff9900]":"white"}
   return (
     <div className="w-full relative bg-[#2F3293] py-16 md:py-24">
       {/* background image */}
@@ -21,7 +22,7 @@ export default function Footer({ color }) {
       {/* content wrapper */}
       <div className="relative w-[90%] md:w-[60%] mx-auto flex flex-col items-center">
         {/* heading */}
-        <h2 className="text-[#FEF200] text-2xl md:text-3xl font-bold text-center">
+        <h2 className="text-[#FEF200] text-2xl md:text-4xl font-bold text-center">
           HAVE ANY QUESTIONS?
         </h2>
         <p className="text-center text-white mt-2 text-sm md:text-base">
@@ -29,17 +30,45 @@ export default function Footer({ color }) {
         </p>
         {/* input */}
         <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 md:gap-20 justify-center mt-5 w-full">
-          
           <input
             type="text"
-            className="p-3 rounded-3xl bg-white w-full sm:w-80 text-black placeholder:text-gray-400"
+            className="p-3 rounded-3xl bg-white w-full sm:w-96 text-black placeholder:text-gray-400"
             placeholder="Enter your email"
           />
         </div>
-        {/* button */}
-        <button className="bg-[#FEF200] text-[#2F3293] px-10 md:px-20 py-3 rounded text-lg md:text-xl font-semibold mt-4">
-          Contact Us
-        </button>
+        <div className="flex flex-col md:flex-row justify-center items-center w-full mt-6 relative">
+          {/* button */}
+          <button className="bg-[#FEF200] text-[#2F3293] px-10 md:px-20 py-3 rounded text-lg md:text-xl font-semibold">
+            Contact Us
+          </button>
+          {/* Social icons */}
+          <div className="flex flex-row items-center gap-2 md:absolute right-0 top-0 mt-5 md:mt-0">
+            <Link href={""}>
+              <Image
+                src={"/Images/facebook.png"}
+                width={40}
+                height={40}
+                alt="facebook"
+              />
+            </Link>
+            <Link href={""}>
+              <Image
+                src={"/Images/linkedin.png"}
+                width={40}
+                height={40}
+                alt="linkedin"
+              />
+            </Link>
+            <Link href={""}>
+              <Image
+                src={"/Images/instagram.png"}
+                width={40}
+                height={40}
+                alt="instagram"
+              />
+            </Link>
+          </div>
+        </div>
         {/* contact info */}
         <div className="flex flex-col md:flex-row items-center md:items-start justify-between mt-8 gap-6 w-full text-center">
           {/* address */}

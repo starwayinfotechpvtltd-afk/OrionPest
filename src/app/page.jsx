@@ -106,11 +106,11 @@ export default function Home() {
             <Image
               src={"/images/img3.png"}
               fill
-              className="rounded-tl-3xl md:rounded-bl-3xl rounded-tr-3xl md:rounded-tr-0 object-cover"
+              className="rounded-tl-3xl md:rounded-bl-3xl rounded-tr-3xl md:rounded-tr-none object-cover"
               alt="image" />
           </div>
           <div className="md:w-[50%] font-bold text-[#2F3293] flex flex-col gap-10 md:gap-20 items-center justify-center pr-10 px-10 md:pl-0 pb-10">
-            <p className="text-justify text-md">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop </p>
+            <p className="text-justify text-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop </p>
             <button className="rounded-xl bg-[#2F3293] text-white px-10 py-2">Get a Free Quote <br /> Call Now</button>
           </div>
         </div>
@@ -226,14 +226,15 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="h-[500px] md:h-[650px] w-full md:w-[40%] relative">
+          {/* <div className="h-[500px] md:h-[650px] w-full md:w-[40%] relative"> */}
             <Image
               src="/Images/img1.png"
               alt="img1"
-              fill
+              width={300}
+              height={300}
               className="mx-auto"
             />
-          </div>
+          {/* </div> */}
         </div>
       </div>
 
