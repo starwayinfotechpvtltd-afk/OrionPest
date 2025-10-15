@@ -16,7 +16,7 @@ export default function Footer({ color }) {
         alt="footer"
         fill
         className="absolute inset-0"
-        style={{ top: "-230px" }}
+        style={{ top: "-250px" }}
       />
 
       {/* content wrapper */}
@@ -42,8 +42,8 @@ export default function Footer({ color }) {
             Contact Us
           </button>
           {/* Social icons */}
-          <div className="flex flex-row items-center gap-2 md:absolute right-0 top-0 mt-5 md:mt-0">
-            <Link href={""}>
+          <div className="flex flex-row items-center gap-2 md:absolute right-0 top-2 mt-5 md:mt-0">
+            <Link href={"https://www.facebook.com/Orionpestsolution/"}>
               <Image
                 src={"/Images/facebook.png"}
                 width={40}
@@ -51,7 +51,7 @@ export default function Footer({ color }) {
                 alt="facebook"
               />
             </Link>
-            <Link href={""}>
+            <Link href={"https://in.linkedin.com/in/orion-pest-solutions-pvt-ltd-3ba200a"}>
               <Image
                 src={"/Images/linkedin.png"}
                 width={40}
@@ -59,7 +59,7 @@ export default function Footer({ color }) {
                 alt="linkedin"
               />
             </Link>
-            <Link href={""}>
+            <Link href={"https://www.instagram.com/orionpestindia"}>
               <Image
                 src={"/Images/instagram.png"}
                 width={40}

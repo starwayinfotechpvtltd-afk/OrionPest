@@ -53,7 +53,7 @@ export default function page() {
             </p>
           </div>
         </div>
-        <p className="text-lg text-[#2F3293] font-bold mt-5">
+        <p className="text-xl text-[#2F3293] font-bold mt-5">
           At Orion, we offer a wide array of fumigation services, tailored to
           your pest control needs and requirements
         </p>

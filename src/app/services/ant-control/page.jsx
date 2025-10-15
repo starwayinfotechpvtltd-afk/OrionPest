@@ -5,7 +5,7 @@ export default function Page() {
   return (
     <div className="w-full">
       <div className="w-full md:w-[80%] lg:w-[60%] mx-auto relative px-4">
-        <h2 className="text-[#2F3293] text-3xl sm:text-4xl lg:text-5xl text-center font-bold mt-10 sm:mt-20">
+        <h2 className="text-[#2F3293] text-3xl sm:text-4xl lg:text-5xl text-center font-bold mt-20">
           Ant Control Services
         </h2>
         <h3 className="text-center text-[#0094DA] text-2xl sm:text-3xl lg:text-4xl font-bold mt-3">

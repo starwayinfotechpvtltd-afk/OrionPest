@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function page() {
   return (
-    <div className="w-full pb-80">
-      <div className="w-[95%] md:w-[80%] mx-auto pb-40">
+    <div className="w-full pb-60">
+      <div className="w-[95%] md:w-[80%] mx-auto pb-20">
         <h2 className="text-[#2F3293] text-center text-4xl md:text-5xl font-bold mt-20 uppercase">
           Blogs
         </h2>

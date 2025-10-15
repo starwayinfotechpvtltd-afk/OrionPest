@@ -7,7 +7,7 @@ export default function FlyControlPage() {
       {/* Main content container */}
       <div className="w-[90%] md:w-[80%] lg:w-[60%] mx-auto">
         {/* Headings */}
-        <h2 className="text-[#2F3293] text-3xl md:text-4xl lg:text-5xl text-center font-bold mt-10 md:mt-20">
+        <h2 className="text-[#2F3293] text-3xl md:text-4xl lg:text-5xl text-center font-bold mt-20">
           Fly Control Services
         </h2>
         <h3 className="text-center text-[#0094DA] text-2xl md:text-3xl lg:text-4xl font-bold mt-3">

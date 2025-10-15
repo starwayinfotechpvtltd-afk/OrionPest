@@ -202,53 +202,53 @@ export default function page() {
   return (
     <div className="w-full">
       <div className="w-full md:w-[80%] lg:w-[60%] mx-auto relative px-4">
-        <h2 className="text-[#2F3293] text-3xl sm:text-4xl lg:text-5xl text-center font-bold mt-10 sm:mt-20">
+        <h2 className="text-[#2F3293] text-3xl md:text-5xl text-center font-bold mt-10 sm:mt-20">
           Our Branches
         </h2>
 
         {/* For India */}
-        <div className="w-full mt-20 bg-gradient-to-b from-[#FFF300] to-[#FEBA00] relative px-4 rounded-tl-4xl rounded-tr-4xl pb-36 pt-10">
+        <div className="w-full mt-10 bg-gradient-to-b from-[#FFF300] to-[#FEBA00] relative px-2 rounded-tl-4xl rounded-tr-4xl pb-36 pt-10">
           <h3 className="text-[#2F3293] text-2xl sm:text-3xl lg:text-4xl text-center font-bold">
             INDIA
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-10 items-center justify-items-center">
+          <div className="grid grid-cols-2 gap-3 mt-10 items-center justify-items-center">
             {India.map((loc, index) => (
               <Link
                 href={`branches/${loc.link}`}
                 key={index}
                 className="text-center"
               >
-                <p className="text-lg font-extralight">{loc.location}</p>
-                <p>{loc.mob}</p>
-                <p>{loc.altMob ? loc.altMob : ""}</p>
+                <p className="text-lg font-400">{loc.location}</p>
+                <p className="text-md">{loc.mob}</p>
+                <p className="text-md">{loc.altMob ? loc.altMob : ""}</p>
               </Link>
             ))}
           </div>
         </div>
 
         {/* For Nepal */}
-        <div className="w-full bg-gradient-to-b from-[#FFF300] to-[#FEBA00] relative px-4 rounded-tl-4xl rounded-tr-4xl py-10 relative -top-20 pb-36">
-          <h3 className="text-[#2F3293] text-2xl sm:text-3xl lg:text-4xl text-center font-bold">
+        <div className="w-full bg-gradient-to-b from-[#FFF300] to-[#FEBA00] relative px-4 rounded-tl-4xl rounded-tr-4xl pt-10 -top-20 pb-60">
+          <h3 className="text-[#2F3293] text-2xl sm:text-3xl lg:text-4xl text-center font-bold"> 
             NEPAL/BHUTAN
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-10 items-center justify-items-center">
+          <div className="grid grid-cols-2 gap-3 mt-10 items-center justify-items-center mb-5">
             {other.map((loc, index) => (
               <Link
                 href={`branches/${loc.link}`}
                 key={index}
                 className="text-center"
               >
-                <p className="text-lg font-extralight">{loc.location}</p>
-                <p>{loc.mob}</p>
+                <p className="text-lg font-400">{loc.location}</p>
+                <p className="text-md">{loc.mob}</p>
               </Link>
             ))}
-            <Link
-              className="mt-6 text-center sm:col-span-2"
+          </div>
+          <Link
+              className="flex justify-center items-center text-lg"
               href="mailto:orionpestnepal@gmail.com"
             >
               Email: orionpestnepal@gmail.com
             </Link>
-          </div>
           <Map />
         </div>
       </div>

@@ -33,6 +33,11 @@ const navLinks = [
     },
     {
       id: 6,
+      text: "BLOGS",
+      href: "/blogs",
+    },
+    {
+      id: 7,
       text: "KNOWLEDGEBASE",
       href: "/knowledgebase",
     },

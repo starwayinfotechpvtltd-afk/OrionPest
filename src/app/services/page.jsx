@@ -69,7 +69,7 @@ const [, ...restServices] = services;
 console.log(restServices)
 export default function page() {
   return (
-    <div className="w-full pb-60 sm:pb-60 md:pb-80">
+    <div className="w-full pb-80">
       <div className="w-[90%] sm:w-[80%] md:w-[60%] mx-auto">
         {/* Title */}
         <h2 className="text-2xl sm:text-3xl md:text-4xl text-[#2F3293] font-bold text-center mt-16 sm:mt-24 md:mt-32">
@@ -77,7 +77,7 @@ export default function page() {
         </h2>
 
         {/* Intro text */}
-        <p className="mt-6 text-black text-lg leading-relaxed text-center md:text-left">
+        <p className="mt-6 text-black text-lg leading-relaxed text-justify">
           At Orion, we believe effective pest management goes beyond
           treatment—it starts with the right strategy. Our team partners closely
           with every client to understand their unique challenges, environment,
@@ -96,7 +96,7 @@ export default function page() {
             <Link href={`/services/${box.link}`} key={box.id}>
               <div className="bg-gradient-to-b from-[#282CC4] to-[#00023A] rounded-3xl p-6 sm:p-8 md:p-10 group h-full flex flex-col justify-between">
                 <div>
-                  <h4 className="text-[#48C4FF] text-center text-lg sm:text-xl font-semibold">
+                  <h4 className="text-[#48C4FF] text-center text-xl font-semibold">
                     {box.heading}
                   </h4>
                   <p className="text-white text-center mt-2 text-lg">
@@ -117,10 +117,10 @@ export default function page() {
 
         {/* Services section */}
         <div className="mt-16 md:mt-20">
-          <h2 className="text-center text-2xl sm:text-3xl font-bold text-[#2F3293]">
+          <h2 className="text-center text-3xl font-bold text-[#2F3293]">
             OUR SERVICES
           </h2>
-          <p className="text-center mt-4 sm:mt-6 text-lg max-w-2xl mx-auto">
+          <p className="text-center mt-4 sm:mt-6 text-lg max-w-3xl mx-auto">
             Trusted pest control designed for homes and businesses. We combine
             expert strategies with proven techniques. Safe, eco-friendly
             solutions that deliver lasting protection.

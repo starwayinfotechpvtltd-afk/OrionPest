@@ -98,6 +98,6 @@ export default function MapPage() {
   }, []);
 
   return (
-    <div id="map" className="w-full h-[600px] relative rounded-3xl mt-10" />
+    <div id="map" className="w-full md:h-[600px] h-[500px] relative rounded-3xl mt-10" />
   );
 }

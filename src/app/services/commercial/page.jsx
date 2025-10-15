@@ -18,7 +18,7 @@ export default function page() {
           Social Media. We can help you from such consequences before they
           destroy your reputation.
         </p>
-        <p className="text-[#0094DA] text-center mt-6 text-lg font-bold">COMMERCIAL PEST CONTROL SERVICES FOR ALL KIND OF BUSINESSES</p>
+        <p className="text-[#0094DA] text-center mt-6 text-xl font-bold">COMMERCIAL PEST CONTROL SERVICES FOR ALL KIND OF BUSINESSES</p>
         <p className="mt-3 text-lg font-bold text-black">Restaurants and Hotels</p>
         <p className="mt-1 text-lg">
           Negative experience of customers during dining will directly affect
@@ -61,7 +61,7 @@ export default function page() {
           benefits, quick response within no time and immediate result is
           guaranteed.
         </p>
-        <p className="text-[#0094DA] text-center mt-6 text-lg font-bold">Key benefits you get from commercial pest control services</p>
+        <p className="text-[#0094DA] text-center mt-6 text-xl font-bold">Key benefits you get from commercial pest control services</p>
         <p className="mt-1 text-lg">
           Pest infestation in various commercial setups can have a few
           advantages when contrasting it with controlling insects like rodents,
