@@ -32,15 +32,29 @@ export default function page() {
         <h2 className="text-3xl md:text-5xl font-bold text-[#2F3293] text-center mt-16 md:mt-28">
           ABOUT OUR JOURNEY
         </h2>
-        <p className="mt-6 text-black text-lg md:text-base leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod or incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-          non proident,unt in culpa qui officia deserunt mollit anim id est
-          laborum. Sed ut perspiciatise Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit, sed do eiusmod or Excepteur sint occaecat cupidatat
-          non proident,unt in culpa qui officia deserunt mollit anim id est
-          laborum. Sed ut perspiciatise
+        <p className="mt-6 text-black text-lg md:text-base leading-relaxed text-justify">
+          At Orion Pest Solutions, we believe that effective pest control is
+          more than just eliminating pests it’s about creating safer, healthier,
+          and pest-free environments for homes and businesses. With years of
+          experience and a team of certified professionals, we deliver
+          innovative, eco-friendly, and long-lasting pest management solutions
+          tailored to your specific needs.
+          <br></br>
+          We specialize in all types of pest control services including
+          cockroach, termite, mosquito, bed bug, and rodent management. Whether
+          it’s a residential property, office space, or large industrial
+          facility, we use advanced technology and proven methods to ensure
+          complete pest eradication with minimal disruption.
+          <br></br>
+          Our mission is simple to protect your space, your health, and your
+          peace of mind. Every treatment we perform is designed around safety,
+          effectiveness, and sustainability. We only use government-approved and
+          environment-friendly chemicals, ensuring the well-being of your
+          family, pets, and the planet.
+          <br></br>
+          At Orion, customer satisfaction is at the heart of everything we do.
+          From inspection to follow-up, our experts are committed to providing
+          transparent communication, quick response, and guaranteed results.
         </p>
       </div>
 

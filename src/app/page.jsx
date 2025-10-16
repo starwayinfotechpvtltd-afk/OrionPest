@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const certifictions = [
   {
@@ -81,6 +82,29 @@ const clients = [
     image: "/Images/clients/img15.png",
   },
 ];
+
+const homeServices = [
+  {
+    image: "/Images/home1.jpg",
+    text: "RESIDENTIAL PEST CONTROL SERVICES",
+    link: "/services/residential",
+  },
+  {
+    image: "/Images/home2.jpg",
+    text: "COMMERCIAL PEST CONTROL SERVICES",
+    link: "/services/commercial",
+  },
+  {
+    image: "/Images/home3.jpg",
+    text: "FUMIGATION PEST CONTROL SERVICES",
+    link: "/services/fumigation",
+  },
+  {
+    image: "/Images/home4.jpg",
+    text: "TERMITE PEST CONTROL SERVICES",
+    link: "/services/termite-control",
+  },
+];
 export default function Home() {
   return (
     <div className="w-full">
@@ -113,18 +137,36 @@ export default function Home() {
           </div>
           <div className="md:w-[50%] font-bold text-[#2F3293] flex flex-col gap-10 md:gap-20 items-center justify-center pr-10 px-10 md:pl-0 pb-10">
             <p className="text-justify text-lg">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop{" "}
+              Are you tired of dealing with cockroaches, termites, bed bugs, or
+              mosquitoes? Don’t worry Orion Pest Solutions is here to help. We
+              provide safe, affordable, and effective pest control services to
+              protect your home, office, and surroundings from unwanted pests.
+              <br></br>
+              Our team of trained professionals uses modern equipment and
+              eco-friendly products to ensure complete pest removal without
+              harming your family, pets, or the environment. Whether you’re
+              facing a small problem or a major infestation, we’re ready to
+              provide fast and reliable solutions.
+              <br></br>
+              We understand that every customer and every property is different.
+              That’s why we offer customized pest control plans designed to suit
+              your specific needs. From one-time treatments to regular
+              maintenance services, we make sure your space stays pest-free all
+              year round.
             </p>
-            <button className="rounded-xl bg-[#2F3293] text-white px-10 py-2">
-              Get a Free Quote <br /> Call Now
-            </button>
+            <div className="flex flex-row items-center gap-3 md:gap-10 justify-start">
+              <Link className="bg-[#2F3293] rounded-xl text-white px-6 md:px-10 py-3.5 cursor-pointer" href={"tel:1800 419 8181"}>
+                <span className="text-nowrap">Call Now</span>
+              </Link>
+              <button
+                className="relative overflow-hidden rounded-xl px-6 md:px-10 py-3.5 text-white transition-all duration-500 group border-2 border-[#2F3293] cursor-pointer bg-[#2F3293]"
+              >
+                <span className="relative z-10 text-white text-nowrap">Get a quote</span>
+                {/* <span
+                  className="absolute bottom-0 left-0 w-0 h-0  rounded-xl transition-all duration-500 group-hover:w-full group-hover:h-full"
+                ></span> */}
+              </button>
+            </div>
           </div>
         </div>
         <p className="md:text-center px-2 text-justify mt-8 text-md text-lg mt-10">
@@ -249,14 +291,14 @@ export default function Home() {
                 Nepal and Bhutan.
               </p>
             </div>
-            <div className="flex flex-col gap-3">
+            {/* <div className="flex flex-col gap-3">
               <h3 className="text-2xl font-bold text-[#2F3293]">Home</h3>
               <p className="text-lg whitespace-normal break-words">
                 RESIDENTIAL PEST CONTROL SERVICES COMMERCIAL PEST CONTROL
                 SERVICES FUMIGATION PEST CONTROL SERVICES TERMITE PEST CONTROL
                 SERVICES
               </p>
-            </div>
+            </div> */}
           </div>
           {/* <div className="h-[500px] md:h-[650px] w-full md:w-[40%] relative"> */}
           <Image
@@ -267,6 +309,74 @@ export default function Home() {
             className="mx-auto"
           />
           {/* </div> */}
+        </div>
+      </div>
+
+      {/* Pest Control Processes */}
+      <div className="mt-20 py-20 px-10 md:px-0 bg-[#5557a5] w-full">
+        <div className="md:w-[60%] mx-auto">
+          <div className="flex md:flex-row flex-col justify-between items-center gap-10">
+            <div>
+              <h3 className="text-2xl font-semibold text-white">
+                Three Step Pest Control Process
+              </h3>
+              <p className="text-lg font-semibold text-white mt-5">
+                1: INSPECT
+              </p>
+              <p className="text-white">Inspect to pinpoint pest issues.</p>
+              <p className="text-lg font-semibold text-white mt-3">
+                2: IDENTIFY
+              </p>
+              <p className="text-white">
+                Identify not only the pest, but the true cause of the problem.
+              </p>
+              <p className="text-lg font-semibold text-white mt-3">3: TREAT</p>
+              <p className="text-white">
+                Treat in the most environmentally responsible way to alleviate
+                current issues and help prevent any future recurrence.
+              </p>
+            </div>
+            <Image
+              src={"/Images/home.jpg"}
+              height={500}
+              width={500}
+              alt="home image"
+              className="p-2 border-1 border-gray-300 rounded"
+            />
+          </div>
+          <p className="text-xl font-semibold mt-10 text-white">
+            ORION INTEGRATED PEST MANAGEMENT (IPM)
+          </p>
+          <p className="text-lg text-white">
+            Orion IPM is an approach to pest control. It coheres to regular
+            monitoring services in order to determine if and when the pest
+            treatments are needed.
+          </p>
+        </div>
+      </div>
+
+      {/* Home services */}
+      <div className="md:w-[60%] w-[90%] mx-auto mt-10">
+        <h3 className="text-center text-[#2F3293] font-bold text-5xl">Home</h3>
+        <div className="mx-auto grid grid-cols-2 md:grid-cols-4 md:gap-5 w-full mt-10 gap-2">
+          {homeServices.map((item, index) => (
+            <Link
+              href={`${item.link}`}
+              className="flex flex-col items-center justify-center gap-3 hover:shadow-2xl p-3 cursor-pointer py-5"
+              key={index}
+            >
+              <Image
+                src={item.image}
+                height={250}
+                width={250}
+                alt={`home${index}`}
+                className="p-2 border-1 border-gray-400"
+              />
+              <p className="md:text-lg text-center font-stretch-90%">
+                {item.text}
+              </p>
+            </Link>
+          ))}
         </div>
       </div>
 

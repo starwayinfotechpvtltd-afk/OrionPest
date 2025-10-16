@@ -60,13 +60,11 @@ const boxes = [
 //   }
 // ];
 
-
 // Generate paths for all branches
 
-
-console.log(services)
+console.log(services);
 const [, ...restServices] = services;
-console.log(restServices)
+console.log(restServices);
 export default function page() {
   return (
     <div className="w-full pb-80">
@@ -131,7 +129,12 @@ export default function page() {
         <div className="mt-10 md:mt-20 grid grid-cols-1 md:grid-cols-3 gap-10">
           {services.map((service, index) => (
             <div key={index} className="flex flex-col items-center text-center">
-              <Image src={service.image} height={120} width={120} alt={service.service} />
+              <Image
+                src={service.image}
+                height={120}
+                width={120}
+                alt={service.service}
+              />
               <h4 className="text-[#2F3293] font-semibold text-2xl mt-4">
                 {service.service}
               </h4>
@@ -141,7 +144,9 @@ export default function page() {
                   className="flex items-center gap-3 group cursor-pointer w-fit text-center mx-auto mt-3"
                   href={`services/${service.link}`}
                 >
-                  <p className="text-[#2F3293] text-center hover:underline text-lg font-bold mt-3">Read more</p>
+                  <button className="bg-[#2F3293] text-center transitio duration-300 ease-in-out hover:-translate-y-1 hover:scale-104 text-lg font-bold mt-3 text-white px-6 py-2 rounded cursor-pointer">
+                    Read more
+                  </button>
                 </Link>
               </div>
             </div>
