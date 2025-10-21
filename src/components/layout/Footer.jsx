@@ -46,24 +46,26 @@ export default function Footer({ color }) {
             <Link href={"https://www.facebook.com/Orionpestsolution/"}>
               <Image
                 src={"/Images/facebook.png"}
-                width={40}
-                height={40}
+                width={43}
+                height={43}
                 alt="facebook"
+                className="rounded-xl"
               />
             </Link>
             <Link href={"https://in.linkedin.com/in/orion-pest-solutions-pvt-ltd-3ba200a"}>
               <Image
                 src={"/Images/linkedin.png"}
-                width={40}
-                height={40}
+                width={43}
+                height={43}
                 alt="linkedin"
+                className="rounded-xl"
               />
             </Link>
             <Link href={"https://www.instagram.com/orionpestindia"}>
               <Image
                 src={"/Images/instagram.png"}
-                width={40}
-                height={40}
+                width={43}
+                height={43}
                 alt="instagram"
               />
             </Link>

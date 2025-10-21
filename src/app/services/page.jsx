@@ -75,7 +75,7 @@ export default function page() {
         </h2>
 
         {/* Intro text */}
-        <p className="mt-6 text-black text-lg leading-relaxed text-justify">
+        <p className="mt-6 text-black text-lg leading-relaxed md:text-justify text-left">
           At Orion, we believe effective pest management goes beyond
           treatment—it starts with the right strategy. Our team partners closely
           with every client to understand their unique challenges, environment,

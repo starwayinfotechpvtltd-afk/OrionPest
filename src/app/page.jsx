@@ -115,12 +115,12 @@ export default function Home() {
         <h5 className="text-2xl text-center text-[#0094DA] mt-5 font-bold">
           Orion Pest Solutions Pvt. Ltd
         </h5>
-        <p className="md:text-center mt-5 text-lg text-justify">
+        <p className="md:text-center mt-5 text-lg text-justify  px-2">
           The most trusted and reliable company providing the best pest control
           solutions in India.
         </p>
 
-        <p className="md:text-center text-justify mt-5 md:w-[60%] mx-auto text-lg">
+        <p className="md:text-center text-justify mt-5 md:w-[60%] mx-auto text-lg px-2">
           Established in 1998, we are constantly pushing the envelope with
           innovations in the niche industry. Today, we take pride in identifying
           ourselves as the pioneers of the pest management industry.
@@ -357,7 +357,7 @@ export default function Home() {
 
       {/* Home services */}
       <div className="md:w-[60%] w-[90%] mx-auto mt-10">
-        <h3 className="text-center text-[#2F3293] font-bold text-5xl">Home</h3>
+        <h3 className="text-center text-[#2F3293] font-bold text-5xl">Services</h3>
         <div className="mx-auto grid grid-cols-2 md:grid-cols-4 md:gap-5 w-full mt-10 gap-2">
           {homeServices.map((item, index) => (
             <Link

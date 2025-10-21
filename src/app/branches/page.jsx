@@ -211,7 +211,7 @@ export default function page() {
           <h3 className="text-[#2F3293] text-2xl sm:text-3xl lg:text-4xl text-center font-bold">
             INDIA
           </h3>
-          <div className="grid grid-cols-2 gap-3 mt-10 items-center justify-items-center">
+          <div className="grid grid-cols-3 gap-3 mt-10 items-center justify-items-center">
             {India.map((loc, index) => (
               <Link
                 href={`branches/${loc.link}`}
