@@ -169,7 +169,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <p className="md:text-center px-2 text-justify mt-8 text-md text-lg mt-10">
+        <p className="md:text-center px-2 text-justify text-md text-lg mt-10">
           Boasting of an expansive pan-India presence, we operate in{" "}
           <span className="font-semibold md:font-bold text-black">
             Delhi, Mumbai, Bangalore, Chennai, Hyderabad, Pune, Ahmedabad,
