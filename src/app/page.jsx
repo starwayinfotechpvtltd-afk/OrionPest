@@ -1,5 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Ri24HoursFill } from "react-icons/ri";
+import { PiCertificateBold } from "react-icons/pi";
+import { GiBonsaiTree } from "react-icons/gi";
+import { FaLocationDot } from "react-icons/fa6";
+import { VscPreview } from "react-icons/vsc";
+import Review from "@/components/ui/Review";
 
 const certifictions = [
   {
@@ -105,6 +111,21 @@ const homeServices = [
     link: "/services/termite-control",
   },
 ];
+
+const whyChooseUs = [
+  {
+    icon: "/Images/support.png",
+  },
+  {
+    icon: "/Images/professional.png",
+  },
+  {
+    icon: "/Images/environment.png",
+  },
+  {
+    icon: "/Images/satisfaction.png",
+  },
+];
 export default function Home() {
   return (
     <div className="w-full">
@@ -155,13 +176,16 @@ export default function Home() {
               year round.
             </p>
             <div className="flex flex-row items-center gap-3 md:gap-10 justify-start">
-              <Link className="bg-[#2F3293] rounded-xl text-white px-6 md:px-10 py-3.5 cursor-pointer" href={"tel:1800 419 8181"}>
+              <Link
+                className="bg-[#2F3293] rounded-xl text-white px-6 md:px-10 py-3.5 cursor-pointer"
+                href={"tel:1800 419 8181"}
+              >
                 <span className="text-nowrap">Call Now</span>
               </Link>
-              <button
-                className="relative overflow-hidden rounded-xl px-6 md:px-10 py-3.5 text-white transition-all duration-500 group border-2 border-[#2F3293] cursor-pointer bg-[#2F3293]"
-              >
-                <span className="relative z-10 text-white text-nowrap">Get a quote</span>
+              <button className="relative overflow-hidden rounded-xl px-6 md:px-10 py-3 text-white transition-all duration-500 group border-2 border-[#2F3293] cursor-pointer bg-[#2F3293]">
+                <span className="relative z-10 text-white text-nowrap">
+                  Get a quote
+                </span>
                 {/* <span
                   className="absolute bottom-0 left-0 w-0 h-0  rounded-xl transition-all duration-500 group-hover:w-full group-hover:h-full"
                 ></span> */}
@@ -227,34 +251,59 @@ export default function Home() {
       {/* Form area */}
       <div className="w-[90%] md:w-[600px] bg-[#2F3293] rounded-3xl mx-auto p-10">
         <h2 className="md:text-4xl text-3xl text-white font-bold text-center mb-3">
-          FAQ
+          Contact Us
         </h2>
-        <h2 className="md:text-4xl text-3xl text-white font-bold text-center mb-8">
+        {/* <h2 className="md:text-4xl text-3xl text-white font-bold text-center mb-8">
           DUMMY TEXT
-        </h2>
+        </h2> */}
         <form action="" className="flex flex-col gap-5">
           <input
             type="text"
             className="bg-white p-3 rounded"
-            placeholder="Your placeholder"
+            placeholder="Your name"
           />
           <input
             type="text"
             className="bg-white p-3 rounded"
-            placeholder="Your placeholder"
+            placeholder="Your email"
           />
           <input
             type="text"
             className="bg-white p-3 rounded"
-            placeholder="Your placeholder"
+            placeholder="Your phone"
           />
-          <input
-            type="text"
-            className="bg-white p-3 rounded"
-            placeholder="Your placeholder"
-          />
+          <select name="" id="" className="bg-white p-3 rounded">
+            <option value="Select Service" selected disabled>Select Service</option>
+            <option value="Cockroach Control">Cockroach Control</option>
+            <option value="Bed bugs Control">Bed bugs Control</option>
+            <option value="Termite Control">Termite Control</option>
+            <option value="Mosquito Control">Mosquito Control</option>
+            <option value="Flies Control">Flies Control</option>
+            <option value="Rodent Control">Rodent Control</option>
+            <option value="Bird Control">Bird Control</option>
+            <option value="Ant Control">Ant Control</option>
+            <option value="Residential Control">Residential Control</option>
+            <option value="Commercial Control">Commercial Control</option>
+            <option value="Herbal Pest Control">Herbal Pest Control</option>
+            <option value="Fumigation Control">Fumigation Control</option>
+          </select>
+          <button className="bg-[#FEBA00] px-10 py-2 rounded-xl font-semibold max-w-44 w-52 self-center text-[17px]">Submit</button>
         </form>
       </div>
+
+      {/* Why choose us po
+            
+            <div key={index} className="bg-[#FEBA00] p-5 rounded-2xl">
+            <Image 
+            src={item.icon}
+            height={100}
+            width={100}
+            alt={`${item.icon}`}/>
+            </div>
+            )}
+          </div>
+        </div>
+      </div> */}
 
       {/* Grid area */}
       <div className="w-[90%] md:w-full mx-auto mt-20">
@@ -357,7 +406,9 @@ export default function Home() {
 
       {/* Home services */}
       <div className="md:w-[60%] w-[90%] mx-auto mt-10">
-        <h3 className="text-center text-[#2F3293] font-bold text-5xl">Services</h3>
+        <h3 className="text-center text-[#2F3293] font-bold text-5xl">
+          Services
+        </h3>
         <div className="mx-auto grid grid-cols-2 md:grid-cols-4 md:gap-5 w-full mt-10 gap-2">
           {homeServices.map((item, index) => (
             <Link
@@ -380,8 +431,15 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Review */}
+      <div className="w-[90%] md:w-full mx-auto overflow-hidden">
+        <div className="md:w-[60%] mx-auto">
+          <Review />
+        </div>
+      </div>
+
       {/* Yellow area */}
-      <div className="bg-linear-to-br from-[#FFF300] to-[#FEBA00] pb-80 relative mt-10 md:mt-20">
+      <div className="bg-linear-to-br from-[#FFF300] to-[#FEBA00] pb-60 md:pb-80 relative mt-10 md:mt-20">
         <div className="w-full md:w-[60%] mx-auto px-5">
           <h2 className="text-2xl md:text-4xl font-bold uppercase text-[#2F3293] pt-16 pb-12 text-center">
             Membership & Certification

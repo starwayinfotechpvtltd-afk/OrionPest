@@ -456,7 +456,7 @@ export default function page() {
         </div>
 
         {/* Rodents */}
-        <div className="mt-32" id="rodents">
+        <div className="mt-52" id="rodents">
           <div className="bg-[#2F3293] p-6 w-[100%] md:w-fit text-white font-bold rounded mx-auto md:mx-0 text-center">
             Rodents (Rats & Mice)
           </div>
@@ -576,7 +576,7 @@ export default function page() {
         </div>
 
         {/* Yellow section */}
-        <div className="bg-gradient-to-b from-[#FFF300] to-[#FEBA00] relative mt-52 pt-10 px-10 md:px-20 pb-80 rounded-4xl flex flex-col gap-7">
+        <div className="bg-gradient-to-b from-[#FFF300] to-[#FEBA00] relative mt-52 pt-10 px-10 md:px-20 pb-60 md:pb-80 rounded-4xl flex flex-col gap-7">
           <p className="text-lg">
             At Orion Pest Solutions, we believe that effective pest control goes
             far beyond just spraying chemicals. That is why we follow the

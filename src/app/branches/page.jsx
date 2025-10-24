@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Map from "@/components/ui/Map"
+import Map from "@/components/ui/Map";
 
 export default function page() {
   const India = [
@@ -207,48 +207,59 @@ export default function page() {
         </h2>
 
         {/* For India */}
-        <div className="w-full mt-10 bg-gradient-to-b from-[#FFF300] to-[#FEBA00] relative px-2 rounded-tl-4xl rounded-tr-4xl pb-36 pt-10">
+        <div className="w-full mt-10 bg-gradient-to-b from-[#FFF300] to-[#FEBA00] relative px-4 sm:px-8 md:px-16 lg:px-24 rounded-tl-4xl rounded-tr-4xl pb-36 pt-10">
           <h3 className="text-[#2F3293] text-2xl sm:text-3xl lg:text-4xl text-center font-bold">
             INDIA
           </h3>
-          <div className="grid grid-cols-3 gap-3 mt-10 items-center justify-items-center">
+
+          <div className="mx-auto mt-10 grid grid-cols-2 md:grid-cols-3 gap-6 justify-center max-w-6xl">
             {India.map((loc, index) => (
+              <div className="w-90% mx-auto">
               <Link
                 href={`branches/${loc.link}`}
                 key={index}
-                className="text-center"
+                className="w-[80%] text-left mx-auto  "
               >
-                <p className="text-lg font-400">{loc.location}</p>
-                <p className="text-md">{loc.mob}</p>
-                <p className="text-md">{loc.altMob ? loc.altMob : ""}</p>
+                <p className="text-[15px] sm:text-lg font-400">
+                  {loc.location}
+                </p>
+                <p className="text-[13px] sm:text-md">{loc.mob}</p>
+                {loc.altMob && (
+                  <p className="text-[13px] sm:text-md">{loc.altMob}</p>
+                )}
               </Link>
+              </div>
             ))}
           </div>
         </div>
 
         {/* For Nepal */}
-        <div className="w-full bg-gradient-to-b from-[#FFF300] to-[#FEBA00] relative px-4 rounded-tl-4xl rounded-tr-4xl pt-10 -top-20 pb-60">
-          <h3 className="text-[#2F3293] text-2xl sm:text-3xl lg:text-4xl text-center font-bold"> 
+        <div className="w-full bg-gradient-to-b from-[#FFF300] to-[#FEBA00] relative px-4 rounded-tl-4xl rounded-tr-4xl pt-10 -top-20 pb-40 md:pb-60">
+          <h3 className="text-[#2F3293] text-2xl sm:text-3xl lg:text-4xl text-center font-bold">
             NEPAL/BHUTAN
           </h3>
           <div className="grid grid-cols-2 gap-3 mt-10 items-center justify-items-center mb-5">
             {other.map((loc, index) => (
+              <div className="w-90% mx-auto">
               <Link
                 href={`branches/${loc.link}`}
                 key={index}
-                className="text-center"
+                className="w-[80%] text-left mx-auto"
               >
-                <p className="text-lg font-400">{loc.location}</p>
-                <p className="text-md">{loc.mob}</p>
+                <p className="text-[15px] sm:text-lg font-400">
+                  {loc.location}
+                </p>
+                <p className="text-[13px] sm:text-md">{loc.mob}</p>
               </Link>
+              </div>
             ))}
           </div>
           <Link
-              className="flex justify-center items-center text-lg"
-              href="mailto:orionpestnepal@gmail.com"
-            >
-              Email: orionpestnepal@gmail.com
-            </Link>
+            className="flex justify-center items-center text-sm sm:text-lg"
+            href="mailto:orionpestnepal@gmail.com"
+          >
+            Email: orionpestnepal@gmail.com
+          </Link>
           <Map />
         </div>
       </div>

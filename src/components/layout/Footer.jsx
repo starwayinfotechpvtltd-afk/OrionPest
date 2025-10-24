@@ -9,18 +9,19 @@ export default function Footer({ color }) {
   const isContact = pathname.startsWith("/contact");
   // ${!isContact ? "bg-linear-to-br from-[#ffd900] to-[#ff9900]":"white"}
   return (
-    <div className="w-full relative bg-[#2F3293] py-16 md:py-24">
+    <div className="w-full relative bg-[#2F3293] pb-16 md:pb-0 md:py-24">
       {/* background image */}
       <Image
         src="/Images/footer.png"
         alt="footer"
         fill
-        className="absolute inset-0"
+        className="absolute inset-0 w-full h-auto object-cover sm:object-fill"
         style={{ top: "-250px" }}
+        priority
       />
 
       {/* content wrapper */}
-      <div className="relative w-[90%] md:w-[60%] mx-auto flex flex-col items-center">
+      <div className="relative w-[90%] md:w-[60%] mx-auto flex flex-col items-center -top-10 sm:top-0 px-3">
         {/* heading */}
         <h2 className="text-[#FEF200] text-2xl md:text-4xl font-bold text-center">
           HAVE ANY QUESTIONS?
@@ -32,7 +33,7 @@ export default function Footer({ color }) {
         <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 md:gap-20 justify-center mt-5 w-full">
           <input
             type="text"
-            className="p-3 rounded-3xl bg-white w-full sm:w-96 text-black placeholder:text-gray-400"
+            className="p-2 md:p-3 rounded-3xl bg-white w-full sm:w-96 text-black placeholder:text-gray-400"
             placeholder="Enter your email"
           />
         </div>
@@ -42,7 +43,7 @@ export default function Footer({ color }) {
             Contact Us
           </button>
           {/* Social icons */}
-          <div className="flex flex-row items-center gap-2 md:absolute right-0 top-2 mt-5 md:mt-0">
+          <div className="flex flex-row items-center gap-2 md:absolute right-0 top-1 mt-5 md:mt-0">
             <Link href={"https://www.facebook.com/Orionpestsolution/"}>
               <Image
                 src={"/Images/facebook.png"}

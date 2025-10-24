@@ -8,13 +8,10 @@ export default function page() {
         <h2 className="text-[#2F3293] text-center text-4xl md:text-5xl font-bold mt-20 uppercase">
           Blogs
         </h2>
-        <p className="text-center text-lg text-[#2F3293] mt-5 font-semibold">
-          DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT
-        </p>
 
         {/* Grid Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
-          {[...Array(5)].map((_, index) => (
+          {[...Array(6)].map((_, index) => (
             <div
               key={index}
               className="flex flex-col items-center bg-[#2F3293] rounded-t-2xl overflow-hidden shadow-lg transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
@@ -39,7 +36,7 @@ export default function page() {
         {/* Form area */}
         <div className="w-[90%] md:w-[600px] bg-[#2F3293] rounded-3xl mx-auto p-10 mt-28">
           <h2 className="text-4xl text-white font-bold text-center mb-3">
-            FAQ
+            Contact Us
           </h2>
           <h2 className="text-4xl text-white font-bold text-center mb-8">
             DUMMY TEXT
@@ -48,23 +45,34 @@ export default function page() {
             <input
               type="text"
               className="bg-white p-3 rounded"
-              placeholder="Your placeholder"
+              placeholder="Your name"
             />
             <input
               type="text"
               className="bg-white p-3 rounded"
-              placeholder="Your placeholder"
+              placeholder="Your email"
             />
             <input
               type="text"
               className="bg-white p-3 rounded"
-              placeholder="Your placeholder"
+              placeholder="Your phone"
             />
-            <input
-              type="text"
-              className="bg-white p-3 rounded"
-              placeholder="Your placeholder"
-            />
+            <select name="" id="" className="bg-white p-3 rounded">
+            <option value="Select Service" selected disabled>Select Service</option>
+            <option value="Cockroach Control">Cockroach Control</option>
+            <option value="Bed bugs Control">Bed bugs Control</option>
+            <option value="Termite Control">Termite Control</option>
+            <option value="Mosquito Control">Mosquito Control</option>
+            <option value="Flies Control">Flies Control</option>
+            <option value="Rodent Control">Rodent Control</option>
+            <option value="Bird Control">Bird Control</option>
+            <option value="Ant Control">Ant Control</option>
+            <option value="Residential Control">Residential Control</option>
+            <option value="Commercial Control">Commercial Control</option>
+            <option value="Herbal Pest Control">Herbal Pest Control</option>
+            <option value="Fumigation Control">Fumigation Control</option>
+          </select>
+          <button className="bg-[#FEBA00] px-10 py-2 rounded-xl font-semibold max-w-44 w-52 self-center text-[17px]">Submit</button>
           </form>
         </div>
       </div>

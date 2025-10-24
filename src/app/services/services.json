@@ -26,13 +26,13 @@
     {
         "service": "Flies Control",
         "link": "flies-control",
-        "image": "/Images/bugs/flies_control.png",
+        "image": "/Images/bugs/flies_control1.png",
         "text": "Eliminate houseflies and fruit flies with our hygienic fly management program. We focus on sanitation, breeding control, and quick removal techniques."
     },
     {
         "service": "Rodent Control",
         "link": "rodent-control",
-        "image": "/Images/bugs/rodent_control.png",
+        "image": "/Images/bugs/rodent_control1.png",
         "text": "Stop rodents from invading your space with our humane and effective solutions. We block entry points, remove infestations, and prevent future recurrence."
     },
     {
@@ -56,7 +56,7 @@
     {
         "service": "Commercial Control",
         "link": "commercial",
-        "image": "/Images/bugs/commercial_control.png",
+        "image": "/Images/bugs/commercial_control1.png",
         "text": "Protect your business with our customized pest control programs for offices and industries. We maintain hygiene and compliance to safeguard your brand reputation."
     },
     {
