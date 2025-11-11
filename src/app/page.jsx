@@ -27,66 +27,21 @@ const certifictions = [
 ];
 
 const clients = [
-  {
-    id: 1,
-    image: "/Images/clients/img1.png",
-  },
-  {
-    id: 2,
-    image: "/Images/clients/img2.png",
-  },
-  {
-    id: 3,
-    image: "/Images/clients/img3.png",
-  },
-  {
-    id: 4,
-    image: "/Images/clients/img4.png",
-  },
-  {
-    id: 5,
-    image: "/Images/clients/img5.png",
-  },
-  {
-    id: 6,
-    image: "/Images/clients/img6.png",
-  },
-  {
-    id: 7,
-    image: "/Images/clients/img7.png",
-  },
-  {
-    id: 8,
-    image: "/Images/clients/img8.png",
-  },
-  {
-    id: 9,
-    image: "/Images/clients/img9.png",
-  },
-  {
-    id: 10,
-    image: "/Images/clients/img10.png",
-  },
-  {
-    id: 11,
-    image: "/Images/clients/img11.png",
-  },
-  {
-    id: 12,
-    image: "/Images/clients/img12.png",
-  },
-  {
-    id: 13,
-    image: "/Images/clients/img13.png",
-  },
-  {
-    id: 14,
-    image: "/Images/clients/img14.png",
-  },
-  {
-    id: 15,
-    image: "/Images/clients/img15.png",
-  },
+    "/Images/clients/img1.png",
+    "/Images/clients/img2.png",
+   "/Images/clients/img3.png",
+   "/Images/clients/img4.png",
+    "/Images/clients/img5.png",
+    "/Images/clients/img6.png",
+    "/Images/clients/img7.webp",
+    "/Images/clients/img8.jpg",
+    "/Images/clients/img9.avif",
+    "/Images/clients/img10.webp",
+    "/Images/clients/img11.png",
+    "/Images/clients/img12.png",
+    "/Images/clients/img13.avif",
+    "/Images/clients/img14.png",
+    "/Images/clients/img15.png",
 ];
 
 const homeServices = [
@@ -464,15 +419,17 @@ export default function Home() {
               Our clients
             </h4>
             <div className="grid grid-cols-3 md:grid-cols-5 gap-3 mt-10">
-              {clients.map((client) => (
+              {clients.map((client, index) => (
+                <div className="w-32 h-20 relative">
                 <Image
-                  src={client.image}
-                  height={200}
-                  width={200}
-                  alt={`img${client.id}`}
-                  className="transitio duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
-                  key={client.id}
+                  src={client}
+                  fill
+                  alt={`img${index}`}
+                  className="transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 rounded-2xl bg-white object-cover"
+                  key={index}
+                  style={{boxShadow: "rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px"}}
                 />
+                </div>
               ))}
             </div>
           </div>
