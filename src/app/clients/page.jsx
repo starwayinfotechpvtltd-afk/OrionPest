@@ -13,7 +13,7 @@ export default function Clients() {
         }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/20"></div>
 
         {/* Content */}
         <div className="relative text-center text-white px-4">
