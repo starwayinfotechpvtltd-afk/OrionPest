@@ -27,21 +27,21 @@ const certifictions = [
 ];
 
 const clients = [
-    "/Images/clients/img1.png",
-    "/Images/clients/img2.png",
-   "/Images/clients/img3.png",
-   "/Images/clients/img4.png",
-    "/Images/clients/img5.png",
-    "/Images/clients/img6.png",
-    "/Images/clients/img7.webp",
-    "/Images/clients/img8.jpg",
-    "/Images/clients/img9.avif",
-    "/Images/clients/img10.webp",
-    "/Images/clients/img11.png",
-    "/Images/clients/img12.png",
-    "/Images/clients/img13.avif",
-    "/Images/clients/img14.png",
-    "/Images/clients/img15.png",
+  "/Images/clients/img1.png",
+  "/Images/clients/img2.png",
+  "/Images/clients/img3.png",
+  "/Images/clients/img4.png",
+  "/Images/clients/img5.png",
+  "/Images/clients/img6.png",
+  "/Images/clients/img7.webp",
+  "/Images/clients/img8.jpg",
+  "/Images/clients/img9.avif",
+  "/Images/clients/img10.webp",
+  "/Images/clients/img11.png",
+  "/Images/clients/img12.png",
+  "/Images/clients/img13.avif",
+  "/Images/clients/img14.png",
+  "/Images/clients/img15.png",
 ];
 
 const homeServices = [
@@ -96,22 +96,26 @@ export default function Home() {
           solutions in India.
         </p>
 
-        <p className="md:text-center text-justify mt-5 md:w-[60%] mx-auto text-lg px-2">
+        <p className="md:text-center text-justify mt-5 max-w-5xl mx-auto text-lg px-2">
           Established in 1998, we are constantly pushing the envelope with
           innovations in the niche industry. Today, we take pride in identifying
           ourselves as the pioneers of the pest management industry.
         </p>
-        <div className="flex flex-col md:flex-row gap-10 items-center bg-[#FEF202] rounded-3xl mt-10 w-full">
-          <div className="h-[300px] md:h-[600px] w-[100%] md:w-[60%] relative">
+
+        <div className="flex flex-col md:flex-row gap-10 items-center bg-[#FEF202] rounded-3xl mt-10 w-full overflow-hidden">
+          {/* IMAGE SECTION */}
+          <div className="h-[400px] md:h-[800px] lg:h-[600px] w-full md:w-1/2 relative">
             <Image
-              src={"/images/img3.png"}
+              src="/images/img3.png"
               fill
-              className="rounded-tl-3xl md:rounded-bl-3xl rounded-tr-3xl md:rounded-tr-none object-cover"
+              className="object-cover rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none"
               alt="image"
               quality={100}
             />
           </div>
-          <div className="md:w-[50%] font-bold text-[#2F3293] flex flex-col gap-10 md:gap-20 items-center justify-center pr-10 px-10 md:pl-0 pb-10">
+
+          {/* TEXT SECTION */}
+          <div className="w-full md:w-1/2 font-bold text-[#2F3293] flex flex-col gap-10 md:gap-16 items-start justify-center px-8 md:px-12 py-10">
             <p className="text-justify text-lg">
               Are you tired of dealing with cockroaches, termites, bed bugs, or
               mosquitoes? Don’t worry Orion Pest Solutions is here to help. We
@@ -130,24 +134,22 @@ export default function Home() {
               maintenance services, we make sure your space stays pest-free all
               year round.
             </p>
-            <div className="flex flex-row items-center gap-3 md:gap-10 justify-start">
+
+            <div className="flex flex-row items-center gap-4 md:gap-8">
               <Link
-                className="bg-[#2F3293] rounded-xl text-white px-6 md:px-10 py-3.5 cursor-pointer"
-                href={"tel:1800 419 8181"}
+                className="bg-[#2F3293] rounded-xl text-white px-8 py-3 cursor-pointer"
+                href="tel:1800 419 8181"
               >
-                <span className="text-nowrap">Call Now</span>
+                Call Now
               </Link>
-              <button className="relative overflow-hidden rounded-xl px-6 md:px-10 py-3 text-white transition-all duration-500 group border-2 border-[#2F3293] cursor-pointer bg-[#2F3293]">
-                <span className="relative z-10 text-white text-nowrap">
-                  Get a quote
-                </span>
-                {/* <span
-                  className="absolute bottom-0 left-0 w-0 h-0  rounded-xl transition-all duration-500 group-hover:w-full group-hover:h-full"
-                ></span> */}
+
+              <button className="relative overflow-hidden rounded-xl px-8 py-3 text-white transition-all duration-500 group border-2 border-[#2F3293] cursor-pointer bg-[#2F3293]">
+                <span className="relative z-10 text-white">Get a quote</span>
               </button>
             </div>
           </div>
         </div>
+
         <p className="md:text-center px-2 text-justify text-md text-lg mt-10">
           Boasting of an expansive pan-India presence, we operate in{" "}
           <span className="font-semibold md:font-bold text-black">
@@ -228,7 +230,9 @@ export default function Home() {
             placeholder="Your phone"
           />
           <select name="" id="" className="bg-white p-3 rounded">
-            <option value="Select Service" selected disabled>Select Service</option>
+            <option value="Select Service" selected disabled>
+              Select Service
+            </option>
             <option value="Cockroach Control">Cockroach Control</option>
             <option value="Bed bugs Control">Bed bugs Control</option>
             <option value="Termite Control">Termite Control</option>
@@ -242,7 +246,9 @@ export default function Home() {
             <option value="Herbal Pest Control">Herbal Pest Control</option>
             <option value="Fumigation Control">Fumigation Control</option>
           </select>
-          <button className="bg-[#FEBA00] px-10 py-2 rounded-xl font-semibold max-w-44 w-52 self-center text-[17px]">Submit</button>
+          <button className="bg-[#FEBA00] px-10 py-2 rounded-xl font-semibold max-w-44 w-52 self-center text-[17px]">
+            Submit
+          </button>
         </form>
       </div>
 
@@ -421,14 +427,16 @@ export default function Home() {
             <div className="grid grid-cols-3 md:grid-cols-5 gap-3 mt-10">
               {clients.map((client, index) => (
                 <div className="w-32 h-20 relative">
-                <Image
-                  src={client}
-                  fill
-                  alt={`img${index}`}
-                  className="transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 rounded-2xl bg-white object-cover"
-                  key={index}
-                  style={{boxShadow: "rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px"}}
-                />
+                  <Image
+                    src={client}
+                    fill
+                    alt={`img${index}`}
+                    className="transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 rounded-2xl bg-white object-cover"
+                    key={index}
+                    style={{
+                      boxShadow: "rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px",
+                    }}
+                  />
                 </div>
               ))}
             </div>

@@ -24,7 +24,7 @@ const navLinks = [
     {
       id: 4,
       text: "CLIENT",
-      href: "#",
+      href: "/clients",
     },
     {
       id: 5,

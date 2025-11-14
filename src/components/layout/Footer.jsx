@@ -21,7 +21,7 @@ export default function Footer({ color }) {
       />
 
       {/* content wrapper */}
-      <div className="relative w-[90%] md:w-[60%] mx-auto flex flex-col items-center -top-10 sm:top-0 px-3">
+      <div className="relative w-[90%] md:w-[60%] mx-auto flex flex-col items-center sm:-top-[100px] px-3">
         {/* heading */}
         <h2 className="text-[#FEF200] text-2xl md:text-4xl font-bold text-center">
           HAVE ANY QUESTIONS?
