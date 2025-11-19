@@ -45,6 +45,7 @@ h3,p, li{
   font-family: "Martel Sans", sans-serif;
 }
 
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -61,4 +62,13 @@ h3,p, li{
 }
 .animate-scroll:hover {
   animation-play-state: paused;
+}
+
+
+/* for image in home page */
+@media (min-width: 1020px) and (max-width: 1170px) {
+  .homepage_image {
+    height: 715px !important;
+    object-fit: cover !important;
+  }
 }

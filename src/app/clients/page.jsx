@@ -32,7 +32,7 @@ export default function Clients() {
         {/* clients */}
         <div className="flex flex-wrap items-center gap-10 mt-20">
             {clientsData.map((client, index)=>
-            <div className="h-20 w-32 relative mx-auto">
+            <div className="h-20 w-32 relative mx-auto" key={index}>
               <Image src={`${client}`} fill alt={`image${index}`} className="object-cover rounded-2xl shadow-xl hover:scale-110 duration-300 transition ease-in-out"/>
               </div>
             )}

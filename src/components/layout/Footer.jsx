@@ -37,13 +37,13 @@ export default function Footer({ color }) {
             placeholder="Enter your email"
           />
         </div>
-        <div className="flex flex-col md:flex-row justify-center items-center w-full mt-6 relative">
+        <div className="flex flex-col  justify-center items-center gap-3 w-full mt-6 relative">
           {/* button */}
           <button className="bg-[#FEF200] text-[#2F3293] px-10 md:px-20 py-3 rounded text-lg md:text-xl font-semibold">
             Contact Us
           </button>
           {/* Social icons */}
-          <div className="flex flex-row items-center gap-2 md:absolute right-0 top-1 mt-5 md:mt-0">
+          <div className="flex flex-row items-center gap-2">
             <Link href={"https://www.facebook.com/Orionpestsolution/"}>
               <Image
                 src={"/Images/facebook.png"}
@@ -73,7 +73,7 @@ export default function Footer({ color }) {
           </div>
         </div>
         {/* contact info */}
-        <div className="flex flex-col md:flex-row items-center md:items-start justify-between mt-8 gap-6 w-full text-center">
+        <div className="flex flex-col md:flex-row items-center md:items-start justify-between mt-6 gap-6 w-full text-center">
           {/* address */}
           <div className="flex-1 text-center md:text-left">
             <p className="text-white">Orion Pest Solutions Pvt. Ltd.</p>

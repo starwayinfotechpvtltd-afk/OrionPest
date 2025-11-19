@@ -92,10 +92,10 @@ export default function page() {
         </p>
 
         {/* Boxes area */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12 md:mt-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 lg:gap-6 mt-12 md:mt-20">
           {boxes.map((box) => (
             <Link href={`/services/${box.link}`} key={box.id}>
-              <div className="bg-gradient-to-b from-[#282CC4] to-[#00023A] rounded-3xl p-6 sm:p-8 md:p-10 group h-full flex flex-col justify-between">
+              <div className="bg-gradient-to-b from-[#282CC4] to-[#00023A] rounded-3xl px-6 py-10 sm:px-3 lg:px-10 group h-full flex flex-col justify-between">
                 <div>
                   <h4 className="text-[#48C4FF] text-center text-xl font-semibold">
                     {box.heading}

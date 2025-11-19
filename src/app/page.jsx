@@ -102,32 +102,34 @@ export default function Home() {
           ourselves as the pioneers of the pest management industry.
         </p>
 
-        <div className="flex flex-col md:flex-row gap-10 items-center bg-[#FEF202] rounded-3xl mt-10 w-full overflow-hidden">
+        <div className="flex flex-col lg:flex-row gap-10 items-center bg-[#FEF202] rounded-3xl mt-10 w-full overflow-hidden">
           {/* IMAGE SECTION */}
-          <div className="h-[400px] md:h-[800px] lg:h-[600px] w-full md:w-1/2 relative">
+          <div className="homepage_image relative w-full lg:w-1/2 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[620px] rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none ">
             <Image
               src="/images/img3.png"
               fill
-              className="object-cover rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none"
               alt="image"
               quality={100}
+              className="object-cover"
             />
           </div>
 
           {/* TEXT SECTION */}
-          <div className="w-full md:w-1/2 font-bold text-[#2F3293] flex flex-col gap-10 md:gap-16 items-start justify-center px-8 md:px-12 py-10">
-            <p className="text-justify text-lg">
+          <div className="w-full lg:w-1/2 font-bold text-[#2F3293] flex flex-col gap-8 items-start justify-center pl-10 lg:pl-0 pr-10 py-10">
+            <p className="text-justify text-md">
               Are you tired of dealing with cockroaches, termites, bed bugs, or
               mosquitoes? Don’t worry Orion Pest Solutions is here to help. We
               provide safe, affordable, and effective pest control services to
               protect your home, office, and surroundings from unwanted pests.
-              <br></br>
+              <br />
+              <br />
               Our team of trained professionals uses modern equipment and
               eco-friendly products to ensure complete pest removal without
               harming your family, pets, or the environment. Whether you’re
               facing a small problem or a major infestation, we’re ready to
               provide fast and reliable solutions.
-              <br></br>
+              <br />
+              <br />
               We understand that every customer and every property is different.
               That’s why we offer customized pest control plans designed to suit
               your specific needs. From one-time treatments to regular
@@ -137,13 +139,13 @@ export default function Home() {
 
             <div className="flex flex-row items-center gap-4 md:gap-8">
               <Link
-                className="bg-[#2F3293] rounded-xl text-white px-8 py-3 cursor-pointer"
+                className="bg-[#2F3293] rounded-xl text-white px-3 sm:px-8 py-3 cursor-pointer"
                 href="tel:1800 419 8181"
               >
                 Call Now
               </Link>
 
-              <button className="relative overflow-hidden rounded-xl px-8 py-3 text-white transition-all duration-500 group border-2 border-[#2F3293] cursor-pointer bg-[#2F3293]">
+              <button className="relative overflow-hidden rounded-xl px-3 sm:px-8 py-3 text-white transition-all duration-500 group border-2 border-[#2F3293] cursor-pointer bg-[#2F3293]">
                 <span className="relative z-10 text-white">Get a quote</span>
               </button>
             </div>
@@ -229,8 +231,11 @@ export default function Home() {
             className="bg-white p-3 rounded"
             placeholder="Your phone"
           />
-          <select name="" id="" className="bg-white p-3 rounded">
-            <option value="Select Service" selected disabled>
+          <select
+            className="bg-white p-3 rounded"
+            defaultValue="Select Service"
+          >
+            <option value="Select Service" disabled>
               Select Service
             </option>
             <option value="Cockroach Control">Cockroach Control</option>
@@ -246,6 +251,7 @@ export default function Home() {
             <option value="Herbal Pest Control">Herbal Pest Control</option>
             <option value="Fumigation Control">Fumigation Control</option>
           </select>
+
           <button className="bg-[#FEBA00] px-10 py-2 rounded-xl font-semibold max-w-44 w-52 self-center text-[17px]">
             Submit
           </button>
@@ -316,7 +322,7 @@ export default function Home() {
             alt="img1"
             width={300}
             height={300}
-            className="mx-auto"
+            className="mx-auto hidden lg:block"
           />
           {/* </div> */}
         </div>
@@ -426,7 +432,7 @@ export default function Home() {
             </h4>
             <div className="grid grid-cols-3 md:grid-cols-5 gap-3 mt-10">
               {clients.map((client, index) => (
-                <div className="w-32 h-20 relative">
+                <div className="w-32 h-20 relative" key={index}>
                   <Image
                     src={client}
                     fill
