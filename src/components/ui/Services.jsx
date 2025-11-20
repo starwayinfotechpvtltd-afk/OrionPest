@@ -16,7 +16,7 @@ export default function Services() {
   const visibleServices =
     isMobile && !showAll ? services.slice(0, 3) : services;
   return (
-    <div className="mt-10 md:mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+    <div className="mt-10 md:mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-5 lg:gap-4 xl:gap-10">
       {visibleServices.map((service, index) => (
         <div
           key={index}

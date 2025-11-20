@@ -97,10 +97,10 @@ export default function page() {
             <Link href={`/services/${box.link}`} key={box.id}>
               <div className="bg-gradient-to-b from-[#282CC4] to-[#00023A] rounded-3xl px-6 py-10 sm:px-3 lg:px-10 group h-full flex flex-col justify-between">
                 <div>
-                  <h4 className="text-[#48C4FF] text-center text-xl font-semibold">
+                  <h4 className="text-[#48C4FF] text-center text-xl md:text-lg xl:text-xl font-semibold">
                     {box.heading}
                   </h4>
-                  <p className="text-white text-center mt-2 text-lg">
+                  <p className="text-white text-center mt-2 text-lg lg:text-base xl:text-lg">
                     {box.desc}
                   </p>
                 </div>

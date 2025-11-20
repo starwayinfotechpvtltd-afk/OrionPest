@@ -78,7 +78,7 @@ export default function Navbar() {
           </Link>
 
           {/* navigation */}
-          <nav className="flex flex-wrap justify-center md:justify-end items-center gap-5">
+          <nav className="flex flex-wrap justify-center lg:justify-end items-center gap-4">
             {navLinks?.map((nav) => (
               <Link
                 key={nav.id}
@@ -88,7 +88,7 @@ export default function Navbar() {
                     activeTab === nav.href
                       ? "text-[#2F3293]"
                       : "text-gray-700 hover:text-[#2F3293]"
-                  } font-bold text-md md:text-base`}
+                  } font-bold text-base`}
               >
                 {nav.text}
               </Link>

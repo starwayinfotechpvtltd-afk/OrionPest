@@ -104,7 +104,7 @@ export default function Home() {
 
         <div className="flex flex-col lg:flex-row gap-10 items-center bg-[#FEF202] rounded-3xl mt-10 w-full overflow-hidden">
           {/* IMAGE SECTION */}
-          <div className="homepage_image relative w-full lg:w-1/2 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[620px] rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none ">
+          <div className="homepage_image relative w-full lg:w-1/2 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] xl:h-[600px] rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none ">
             <Image
               src="/images/img3.png"
               fill
@@ -331,7 +331,7 @@ export default function Home() {
       {/* Pest Control Processes */}
       <div className="mt-20 py-20 px-10 md:px-0 bg-[#5557a5] w-full">
         <div className="md:w-[60%] mx-auto">
-          <div className="flex md:flex-row flex-col justify-between items-center gap-10">
+          <div className="flex lg:flex-row flex-col justify-between items-center gap-10">
             <div>
               <h3 className="text-2xl font-semibold text-white">
                 Three Step Pest Control Process
@@ -430,14 +430,14 @@ export default function Home() {
             <h4 className="text-center text-3xl font-bold uppercase text-[#2F3293]">
               Our clients
             </h4>
-            <div className="grid grid-cols-3 md:grid-cols-5 gap-3 mt-10">
+            <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 mt-10 justify-center items-center">
               {clients.map((client, index) => (
-                <div className="w-32 h-20 relative" key={index}>
+                <div className="w-24 h-20 md:w-32 md:h-20 relative mx-auto" key={index}>
                   <Image
                     src={client}
                     fill
                     alt={`img${index}`}
-                    className="transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 rounded-2xl bg-white object-cover"
+                    className="transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 rounded-2xl bg-white md:object-cover"
                     key={index}
                     style={{
                       boxShadow: "rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px",
