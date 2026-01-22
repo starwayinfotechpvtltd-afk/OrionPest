@@ -80,7 +80,7 @@ export default function Home() {
   return (
     <div className="w-full">
       <div className="w-[95%] md:w-[80%] mx-auto">
-        <h1 className="text-[#2F3293] text-2xl md:text-5xl font-bold font-sans mx-auto text-center mt-20">
+        <h1 className="text-[#2F3293] text-2xl md:text-4xl lg:text-5xl font-bold font-sans mx-auto text-center mt-20">
           Largest Indian Owned <br></br> Pan India Pest Control Company
         </h1>
         <h5 className="text-2xl text-center text-[#0094DA] mt-5 font-bold">
