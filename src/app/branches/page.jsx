@@ -1,6 +1,10 @@
+"use client"
 import React from "react";
 import Link from "next/link";
-import Map from "@/components/ui/Map";
+import dynamic from "next/dynamic";
+const Map = dynamic(() => import("@/components/ui/Map"), {
+  ssr: false,
+});
 
 export default function page() {
   const India = [

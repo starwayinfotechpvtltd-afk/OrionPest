@@ -27,19 +27,19 @@ const certifictions = [
 ];
 
 const clients = [
-  "/Images/clients/img1.png",
-  "/Images/clients/img2.png",
+  "/Images/clients/img6.jpg",
+  "/Images/clients/img73.png",
   "/Images/clients/img3.png",
   "/Images/clients/img4.png",
   "/Images/clients/img5.png",
   "/Images/clients/img6.png",
   "/Images/clients/img7.webp",
   "/Images/clients/img8.jpg",
-  "/Images/clients/img9.avif",
+  "/Images/clients/img9.png",
   "/Images/clients/img10.webp",
   "/Images/clients/img11.png",
   "/Images/clients/img12.png",
-  "/Images/clients/img13.avif",
+  "/Images/clients/img13.png",
   "/Images/clients/img14.png",
   "/Images/clients/img15.png",
 ];
@@ -85,9 +85,9 @@ export default function Home() {
   return (
     <div className="w-full">
       <div className="w-[95%] md:w-[80%] mx-auto">
-        <h2 className="text-[#2F3293] text-2xl md:text-5xl font-bold font-sans mx-auto text-center mt-20">
-          We Are The Best <br /> Pest Control Company in India
-        </h2>
+        <h1 className="text-[#2F3293] text-2xl md:text-5xl font-bold font-sans mx-auto text-center mt-20">
+          Largest Indian Owned <br></br> Pan India Pest Control Company
+        </h1>
         <h5 className="text-2xl text-center text-[#0094DA] mt-5 font-bold">
           Orion Pest Solutions Pvt. Ltd
         </h5>
@@ -137,7 +137,7 @@ export default function Home() {
               year round.
             </p>
 
-            <div className="flex flex-row items-center gap-4 md:gap-8">
+            <div className="flex flex-row items-center gap-4 md:gap-8 justify-center mx-auto">
               <Link
                 className="bg-[#2F3293] rounded-xl text-white px-3 sm:px-8 py-3 cursor-pointer"
                 href="tel:1800 419 8181"

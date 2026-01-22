@@ -5,12 +5,17 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Services() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [isMobile, setIsMobile] = useState(false);
   const [showAll, setShowAll] = useState(false);
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth < 768);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    const checkMobile=()=>{
+      setIsMobile(window.innerWidth < 768)
+    }
+    checkMobile()
+    // const handleResize = () => setIsMobile(window.innerWidth < 768);
+    // window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
   const visibleServices =
