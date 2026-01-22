@@ -1,10 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Ri24HoursFill } from "react-icons/ri";
-import { PiCertificateBold } from "react-icons/pi";
-import { GiBonsaiTree } from "react-icons/gi";
-import { FaLocationDot } from "react-icons/fa6";
-import { VscPreview } from "react-icons/vsc";
 import Review from "@/components/ui/Review";
 
 const certifictions = [
@@ -109,7 +104,6 @@ export default function Home() {
               src="/images/img3.png"
               fill
               alt="image"
-              quality={100}
               className="object-cover"
             />
           </div>
