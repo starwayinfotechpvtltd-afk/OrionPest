@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Form from "@/components/ui/SubmitForm";
 
 export default function page() {
   return (
@@ -41,47 +42,7 @@ export default function page() {
           <h2 className="text-4xl text-white font-bold text-center mb-8">
             DUMMY TEXT
           </h2>
-          <form action="" className="flex flex-col gap-5">
-            <input
-              type="text"
-              className="bg-white p-3 rounded"
-              placeholder="Your name"
-            />
-            <input
-              type="text"
-              className="bg-white p-3 rounded"
-              placeholder="Your email"
-            />
-            <input
-              type="text"
-              className="bg-white p-3 rounded"
-              placeholder="Your phone"
-            />
-            <select
-              className="bg-white p-3 rounded"
-              defaultValue="Select Service"
-            >
-              <option value="Select Service" disabled>
-                Select Service
-              </option>
-              <option value="Cockroach Control">Cockroach Control</option>
-              <option value="Bed bugs Control">Bed bugs Control</option>
-              <option value="Termite Control">Termite Control</option>
-              <option value="Mosquito Control">Mosquito Control</option>
-              <option value="Flies Control">Flies Control</option>
-              <option value="Rodent Control">Rodent Control</option>
-              <option value="Bird Control">Bird Control</option>
-              <option value="Ant Control">Ant Control</option>
-              <option value="Residential Control">Residential Control</option>
-              <option value="Commercial Control">Commercial Control</option>
-              <option value="Herbal Pest Control">Herbal Pest Control</option>
-              <option value="Fumigation Control">Fumigation Control</option>
-            </select>
-
-            <button className="bg-[#FEBA00] px-10 py-2 rounded-xl font-semibold max-w-44 w-52 self-center text-[17px]">
-              Submit
-            </button>
-          </form>
+          <Form />
         </div>
       </div>
     </div>

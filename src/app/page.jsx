@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Review from "@/components/ui/Review";
+import Form from "@/components/ui/SubmitForm";
 
 const certifictions = [
   {
@@ -78,7 +79,7 @@ const whyChooseUs = [
 ];
 export default function Home() {
   return (
-    <div className="w-full">
+    <div className="w-full"> 
       <div className="w-[95%] md:w-[80%] mx-auto">
         <h1 className="text-[#2F3293] text-2xl md:text-4xl lg:text-5xl font-bold font-sans mx-auto text-center mt-20">
           Largest Indian Owned <br></br> Pan India Pest Control Company
@@ -101,7 +102,7 @@ export default function Home() {
           {/* IMAGE SECTION */}
           <div className="homepage_image relative w-full lg:w-1/2 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] xl:h-[600px] rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none ">
             <Image
-              src="/images/img3.png"
+              src="/Images/img3.png"
               fill
               alt="image"
               className="object-cover"
@@ -139,9 +140,12 @@ export default function Home() {
                 Call Now
               </Link>
 
-              <button className="relative overflow-hidden rounded-xl px-3 sm:px-8 py-3 text-white transition-all duration-500 group border-2 border-[#2F3293] cursor-pointer bg-[#2F3293]">
+              <Link 
+              className="relative overflow-hidden rounded-xl px-3 sm:px-8 py-3 text-white transition-all duration-500 group border-2
+               border-[#2F3293] cursor-pointer bg-[#2F3293]"
+               href={"contact"}>
                 <span className="relative z-10 text-white">Get a quote</span>
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -209,47 +213,7 @@ export default function Home() {
         {/* <h2 className="md:text-4xl text-3xl text-white font-bold text-center mb-8">
           DUMMY TEXT
         </h2> */}
-        <form action="" className="flex flex-col gap-5">
-          <input
-            type="text"
-            className="bg-white p-3 rounded"
-            placeholder="Your name"
-          />
-          <input
-            type="text"
-            className="bg-white p-3 rounded"
-            placeholder="Your email"
-          />
-          <input
-            type="text"
-            className="bg-white p-3 rounded"
-            placeholder="Your phone"
-          />
-          <select
-            className="bg-white p-3 rounded"
-            defaultValue="Select Service"
-          >
-            <option value="Select Service" disabled>
-              Select Service
-            </option>
-            <option value="Cockroach Control">Cockroach Control</option>
-            <option value="Bed bugs Control">Bed bugs Control</option>
-            <option value="Termite Control">Termite Control</option>
-            <option value="Mosquito Control">Mosquito Control</option>
-            <option value="Flies Control">Flies Control</option>
-            <option value="Rodent Control">Rodent Control</option>
-            <option value="Bird Control">Bird Control</option>
-            <option value="Ant Control">Ant Control</option>
-            <option value="Residential Control">Residential Control</option>
-            <option value="Commercial Control">Commercial Control</option>
-            <option value="Herbal Pest Control">Herbal Pest Control</option>
-            <option value="Fumigation Control">Fumigation Control</option>
-          </select>
-
-          <button className="bg-[#FEBA00] px-10 py-2 rounded-xl font-semibold max-w-44 w-52 self-center text-[17px]">
-            Submit
-          </button>
-        </form>
+        <Form />
       </div>
 
       {/* Why choose us po
@@ -325,7 +289,7 @@ export default function Home() {
       {/* Pest Control Processes */}
       <div className="mt-20 py-20 px-10 md:px-0 bg-[#5557a5] w-full">
         <div className="md:w-[60%] mx-auto">
-          <div className="flex lg:flex-row flex-col justify-between items-center gap-10">
+          <div className="flex xl:flex-row flex-col justify-between items-center gap-10">
             <div>
               <h3 className="text-2xl font-semibold text-white">
                 Three Step Pest Control Process

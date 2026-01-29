@@ -11,183 +11,183 @@ export default function page() {
     {
       location: "AHMEDABAD",
       mob: "+91 99743 73654",
-      link: "/ahmedabad",
+      link: "ahmedabad",
     },
     {
       location: "JAMSHEDPUR",
       mob: "+91 95765 79260",
-      link: "/jamshedpur",
+      link: "jamshedpur",
     },
     {
       location: "AURANGABAD",
       mob: "+91 98678 26262",
-      link: "/aurangabad",
+      link: "aurangabad",
     },
     {
       location: "KERALA",
       mob: "+91 48440 54333",
       altMob: "+91 96332 12345",
-      link: "/kerala",
+      link: "kerala",
     },
     {
       location: "BHUBANESWAR",
       mob: "+91 99372 91919",
-      link: "/bhubaneswar",
+      link: "bhubaneswar",
     },
     {
       location: "KOLHAPUR",
       mob: "+91 98928 41414",
-      link: "/kolhapur",
+      link: "kolhapur",
     },
     {
       location: "BANGALORE",
       mob: "+91 99006 51515",
-      link: "/bangalore",
+      link: "bangalore",
     },
     {
       location: "KODAIKANAL",
       mob: "+91 95513 20202",
-      link: "/kodaikanal",
+      link: "kodaikanal",
     },
     {
       location: "BILASPUR",
       mob: "+91 99936 82238",
-      link: "/bilaspur",
+      link: "bilaspur",
     },
     {
       location: "LUCKNOW",
       mob: "+91 95806 53342",
-      link: "/lucknow",
+      link: "lucknow",
     },
     {
       location: "BURDWAN",
       mob: "+91 98000 02299",
-      link: "/burdwan",
+      link: "burdwan",
     },
     {
       location: "MYSORE",
       mob: "+91 96633 68249",
-      link: "/mysore",
+      link: "mysore",
     },
     {
       location: "CHENNAI",
       mob: "+91 97918 13131",
-      link: "/chennai",
+      link: "chennai",
     },
     {
       location: "MUMBAI",
       mob: "+91 98923 21212",
-      link: "/mumbai",
+      link: "mumbai",
     },
     {
       location: "COIMBATORE",
       mob: "+91 90036 28256",
-      link: "/coimbatore",
+      link: "coimbatore",
     },
     {
       location: "MANGALORE",
       mob: "+91 99729 33567",
-      link: "/mangalore",
+      link: "mangalore",
     },
     {
       location: "COCHIN",
       mob: "+91 96332 12345",
-      link: "/cochin",
+      link: "cochin",
     },
     {
       location: "NAGPUR",
       mob: "+91 80075 33009",
-      link: "/nagpur",
+      link: "nagpur",
     },
     {
       location: "DEHRADUN",
       mob: "+91 98109 05055",
-      link: "/dehradun",
+      link: "dehradun",
     },
     {
       location: "PUNE",
       mob: "+91 98927 21212",
-      link: "/pune",
+      link: "pune",
     },
     {
       location: "DAMAN",
       mob: "+91 99673 21212",
-      link: "/daman",
+      link: "daman",
     },
     {
       location: "PATNA",
       mob: "+91 90881 23456",
-      link: "/patna",
+      link: "patna",
     },
     {
       location: "DELHI",
       mob: "+91 98180 00610",
-      link: "/delhi",
+      link: "delhi",
     },
     {
       location: "PUDUCHERRY",
       mob: "+91 97915 13131",
-      link: "/puducherry",
+      link: "puducherry",
     },
     {
       location: "DHANBAD",
       mob: "+91 94709 44177",
-      link: "/dhanbad",
+      link: "dhanbad",
     },
     {
       location: "RAIPUR",
       mob: "+91 73899 18181",
-      link: "/raipur",
+      link: "raipur",
     },
     {
       location: "GUWAHATI",
       mob: "+91 88118 19191",
-      link: "/guwahati",
+      link: "guwahati",
     },
     {
       location: "RANCHI",
       mob: "+91 99550 09024",
-      link: "/ranchi",
+      link: "ranchi",
     },
     {
       location: "HALDIA",
       mob: "+91 94343 85553",
-      link: "/haldia",
+      link: "haldia",
     },
     {
       location: "SILIGURI",
       mob: "+91 98001 35539",
-      link: "/siliguri",
+      link: "siliguri",
     },
     {
       location: "HYDERABAD",
       mob: "+91 90006 21212",
-      link: "/hyderabad",
+      link: "hyderabad",
     },
     {
       location: "TRIVANDRUM",
       mob: "+91 81299 99611",
-      link: "/trivandrum",
+      link: "trivandrum",
     },
     {
       location: "INDORE",
       mob: "+91 98936 90900",
-      link: "/indore",
+      link: "indore",
     },
     {
       location: "VIJAYAWADA",
       mob: "+91 80085 12121",
-      link: "/vijayawada",
+      link: "vijayawada",
     },
     {
       location: "JAIPUR",
       mob: "+91 82903 92804",
-      link: "/jaipur",
+      link: "jaipur",
     },
     {
       location: "VISAKAPATANAM",
       mob: "+91 96182 19191",
-      link: "/visakapatanam",
+      link: "visakapatanam",
     },
   ];
 
@@ -195,12 +195,12 @@ export default function page() {
     {
       location: "BHUTAN",
       mob: "+97 5772 19618",
-      link: "/bhutan",
+      link: "bhutan",
     },
     {
       location: "NEPAL",
       mob: "+977 9802781107",
-      link: "/nepal",
+      link: "nepal",
     },
   ];
   return (
@@ -220,7 +220,7 @@ export default function page() {
             <div className="mt-10 grid grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
               {India.map((loc, index) => (
                 <div key={index} className="text-left w-full sm:w-[220px]">
-                  <Link href={`branches/${loc.link}`}>
+                  <Link href={`${loc.link}`}>
                     <p className="text-[15px] sm:text-lg font-normal">
                       {loc.location}
                     </p>
@@ -244,7 +244,7 @@ export default function page() {
             {other.map((loc, index) => (
               <div className="w-90% mx-auto">
                 <Link
-                  href={`branches/${loc.link}`}
+                  href={`${loc.link}`}
                   key={index}
                   className="w-[80%] text-left mx-auto"
                 >

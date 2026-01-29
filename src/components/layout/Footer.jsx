@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import Newsletter from "../ui/Newsletter";
 
 export default function Footer({ color }) {
   const pathname = usePathname();
@@ -30,64 +31,59 @@ export default function Footer({ color }) {
           We’re here to help—get in touch with us today.
         </p>
         {/* input */}
-        <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 md:gap-20 justify-center mt-5 w-full">
-          <input
-            type="text"
-            className="p-2 md:p-3 rounded-3xl bg-white w-full sm:w-96 text-black placeholder:text-gray-400"
-            placeholder="Enter your email"
-          />
+        <Newsletter />
+        {/* <div className="flex flex-col  justify-center items-center gap-3 w-full mt-6 relative"> */}
+
+        {/* Social icons */}
+        <div className="flex flex-row items-center gap-2">
+          <Link href={"https://www.facebook.com/Orionpestsolution/"}>
+            <Image
+              src={"/Images/facebook.png"}
+              width={43}
+              height={43}
+              alt="facebook"
+              className="rounded-xl"
+            />
+          </Link>
+          <Link
+            href={
+              "https://in.linkedin.com/in/orion-pest-solutions-pvt-ltd-3ba200a"
+            }
+          >
+            <Image
+              src={"/Images/linkedin.png"}
+              width={43}
+              height={43}
+              alt="linkedin"
+              className="rounded-xl"
+            />
+          </Link>
+          <Link href={"https://www.instagram.com/orionpestindia"}>
+            <Image
+              src={"/Images/instagram.png"}
+              width={43}
+              height={43}
+              alt="instagram"
+            />
+          </Link>
         </div>
-        <div className="flex flex-col  justify-center items-center gap-3 w-full mt-6 relative">
-          {/* button */}
-          <button className="bg-[#FEF200] text-[#2F3293] px-10 md:px-20 py-3 rounded text-lg md:text-xl font-semibold">
-            Contact Us
-          </button>
-          {/* Social icons */}
-          <div className="flex flex-row items-center gap-2">
-            <Link href={"https://www.facebook.com/Orionpestsolution/"}>
-              <Image
-                src={"/Images/facebook.png"}
-                width={43}
-                height={43}
-                alt="facebook"
-                className="rounded-xl"
-              />
-            </Link>
-            <Link href={"https://in.linkedin.com/in/orion-pest-solutions-pvt-ltd-3ba200a"}>
-              <Image
-                src={"/Images/linkedin.png"}
-                width={43}
-                height={43}
-                alt="linkedin"
-                className="rounded-xl"
-              />
-            </Link>
-            <Link href={"https://www.instagram.com/orionpestindia"}>
-              <Image
-                src={"/Images/instagram.png"}
-                width={43}
-                height={43}
-                alt="instagram"
-              />
-            </Link>
-          </div>
-        </div>
+        {/* </div> */}
         {/* contact info */}
         <div className="flex flex-col md:flex-row items-center md:items-start justify-between mt-6 gap-6 w-full text-center">
           {/* address */}
-          <div className="flex-1 text-center md:text-left">
+          <div className="fleX flex-col text-center md:text-left">
             <p className="text-white">Orion Pest Solutions Pvt. Ltd.</p>
             <p className="text-white">200W, S.P. Mukherjee Road</p>
             <p className="text-white">Kolkata - 700026, West Bengal, India.</p>
           </div>
 
           {/* email */}
-          <p className="text-white flex-1">sales@orionpest.com</p>
+          <Link className="flex-1 text-white lg:mr-24 xl:mr-40" href={"mailto:sales@orionpest.com"}>sales@orionpest.com</Link>
 
           {/* phone */}
-          <div className="flex-1 text-center md:text-right">
-            <p className="text-white">1800 419 8181</p>
-            <p className="text-white">9800123456</p>
+          <div className="flex flex-col text-center md:text-right">
+            <Link className="text-white text-nowrap" href={"tel:1800 419 8181"}>1800 419 8181</Link>
+            <Link className="text-white" href={"tel:9800123456"}>9800123456</Link>
           </div>
         </div>
         {/* copyright */}

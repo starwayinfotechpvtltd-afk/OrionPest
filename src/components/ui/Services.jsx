@@ -43,7 +43,7 @@ export default function Services() {
             <p className="flex-1">{service.text}</p>
 
             <Link
-              href={`services/${service.link}`}
+              href={`${service.link}`}
               className="flex justify-center mt-4"
             >
               <button className="bg-[#2F3293] transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-104 text-lg font-bold text-white px-5 lg:px-5 py-2 rounded">
