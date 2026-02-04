@@ -88,7 +88,7 @@ export default function Footer({ color }) {
         </div>
         {/* copyright */}
         <p className="text-white text-center mt-10 text-sm md:text-base">
-          Copyright © 2025 Orion Pest Solutions. All Rights Reserved. Site
+          Copyright © 2026 Orion Pest Solutions. All Rights Reserved. Site
           Designed & Maintained by Starway Web Digital.
         </p>
       </div>

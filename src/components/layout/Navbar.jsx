@@ -14,7 +14,7 @@ const navLinks = [
   {
     id: 2,
     text: "SERVICES",
-    href: "/services",
+    href: "/pest-control-services",
   },
   {
     id: 3,

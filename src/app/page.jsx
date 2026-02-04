@@ -241,7 +241,7 @@ export default function Home() {
               </h3>
               <p className="whitespace-normal break-words text-lg">
                 Orion Pest Solutions Private Limited provides a range of pest
-                control services in more than 40 locations in India including
+                control services in more than 72 locations in India including
                 Nepal and Bhutan.
               </p>
             </div>
@@ -250,7 +250,7 @@ export default function Home() {
                 GUARANTEED RESULTS
               </h3>
               <p className="text-lg whitespace-normal break-words">
-                With our indepth experience over 18 years, we continue to
+                With our indepth experience over 27 plus years, we continue to
                 enhance our operational excellence, safety, capability, customer
                 service and innovations.
               </p>
@@ -261,7 +261,7 @@ export default function Home() {
               </h3>
               <p className="text-lg whitespace-normal break-words">
                 Orion Pest Solutions Private Limited provides a range of pest
-                control services in more than 40 locations in India including
+                control services in more than 72 locations in India including
                 Nepal and Bhutan.
               </p>
             </div>
@@ -297,15 +297,15 @@ export default function Home() {
               <p className="text-lg font-semibold text-white mt-5">
                 1: INSPECT
               </p>
-              <p className="text-white">Inspect to pinpoint pest issues.</p>
+              <p className="text-white text-lg">Inspect to pinpoint pest issues.</p>
               <p className="text-lg font-semibold text-white mt-3">
                 2: IDENTIFY
               </p>
-              <p className="text-white">
+              <p className="text-white text-lg">
                 Identify not only the pest, but the true cause of the problem.
               </p>
               <p className="text-lg font-semibold text-white mt-3">3: TREAT</p>
-              <p className="text-white">
+              <p className="text-white text-lg">
                 Treat in the most environmentally responsible way to alleviate
                 current issues and help prevent any future recurrence.
               </p>

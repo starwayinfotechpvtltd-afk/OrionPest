@@ -67,8 +67,6 @@ console.log(services);
 const [, ...restServices] = services;
 console.log(restServices);
 export default function page() {
-
-  
   return (
     <div className="w-full pb-60 md:pb-80">
       <div className="w-[90%] sm:w-[80%] md:w-[60%] mx-auto">
@@ -94,7 +92,7 @@ export default function page() {
         {/* Boxes area */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 lg:gap-6 mt-12 md:mt-20">
           {boxes.map((box) => (
-            <Link href={`/services/${box.link}`} key={box.id}>
+            <Link href={`/${box.link}`} key={box.id}>
               <div className="bg-gradient-to-b from-[#282CC4] to-[#00023A] rounded-3xl px-6 py-10 sm:px-3 lg:px-10 group h-full flex flex-col justify-between">
                 <div>
                   <h4 className="text-[#48C4FF] text-center text-xl md:text-lg xl:text-xl font-semibold">
@@ -127,34 +125,6 @@ export default function page() {
             solutions that deliver lasting protection.
           </p>
         </div>
-
-        {/* Services list */}
-        {/* <div className="mt-10 md:mt-20 grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
-          {services.map((service, index) => (
-            <div key={index} className="flex flex-col items-center text-center">
-              <Image
-                src={service.image}
-                height={120}
-                width={120}
-                alt={service.service}
-              />
-              <h4 className="text-[#2F3293] font-semibold text-2xl mt-4">
-                {service.service}
-              </h4>
-              <div className="bg-[#FEF200] p-5 rounded-2xl mt-4 h-64 md:h-56">
-                <p>{service.text}</p>
-                <Link
-                  className="flex items-center gap-3 group cursor-pointer w-fit text-center mx-auto mt-3"
-                  href={`services/${service.link}`}
-                >
-                  <button className="bg-[#2F3293] text-center transitio duration-300 ease-in-out hover:-translate-y-1 hover:scale-104 text-lg font-bold mt-3 text-white px-6 py-2 rounded cursor-pointer">
-                    Read more
-                  </button>
-                </Link>
-              </div>
-            </div>
-          ))}
-        </div> */}
         <Services />
       </div>
     </div>
